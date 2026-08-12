@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --bg-canvas: #EAE6DF;
+            --bg-canvas: #EAE6DF; /* Color crema/arena exacto de tu fondo */
             --card-white: #FFFFFF;
-            --dark-main: #1C1917;
-            --gray-text: #78716C;
-            --light-bg: #F5F5F4;
-            --border-color: #E7E5E4;
+            --dark-main: #1C1917; /* Gris oscuro profundo */
+            --gray-text: #78716C; /* Tono taupe/gris suave */
+            --light-bg: #F5F5F4; /* Fondo claro para tarjetas internas */
+            --border-color: #E7E5E4; /* Líneas divisorias suaves */
             --radius-outer: 36px;
             --radius-inner: 24px;
         }
@@ -33,8 +33,8 @@
             line-height: 1.5;
         }
 
-        /* Contenedor principal estilo mockup flotante exacto a tu referencia */
-        .mockup-container {
+        /* Contenedor principal blanco flotante sobre el fondo crema */
+        .main-container {
             max-width: 1200px;
             margin: 0 auto;
             background-color: var(--card-white);
@@ -62,6 +62,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            color: var(--dark-main);
         }
 
         .nav-links-center {
@@ -92,7 +93,7 @@
             font-weight: 500;
         }
 
-        /* 2. Bloque Hero Superior 1 (Título a la izquierda, foto a la derecha) */
+        /* 2. Hero Superior 1 (Título y Foto Real) */
         .hero-top-section {
             padding: 50px 45px;
             display: grid;
@@ -142,7 +143,7 @@
             object-position: top center;
         }
 
-        /* 3. Bloque Hero Central 2 (Banner Curvo Oscuro con frase) */
+        /* 3. Hero Central 2 (Banner Oscuro Curvo con Frase) */
         .curved-banner-padding {
             padding: 40px 45px;
         }
@@ -177,7 +178,7 @@
             white-space: nowrap;
         }
 
-        /* 4. Mini Fila de Resumen / Credenciales estilo 3 avatares de tu foto */
+        /* 4. Mini Fila de Credenciales / Perfiles */
         .credentials-row-grid {
             padding: 0 45px 40px 45px;
             display: grid;
@@ -220,7 +221,7 @@
             color: var(--gray-text);
         }
 
-        /* 5. Secciones de Contenido (Proyectos, Herramientas, Preparación) */
+        /* 5. Secciones de Contenido */
         .section-container-box {
             padding: 40px 45px 60px 45px;
             border-top: 1px solid var(--border-color);
@@ -345,7 +346,7 @@
             color: var(--gray-text);
         }
 
-        /* 6. Footer Oscuro Inferior Exacto a tu Referencia */
+        /* 6. Footer Oscuro Inferior */
         footer {
             background-color: var(--dark-main);
             color: var(--card-white);
@@ -429,7 +430,7 @@
 </head>
 <body>
 
-    <div class="mockup-container">
+    <div class="main-container">
 
         <!-- Navbar -->
         <div class="top-navbar">
@@ -452,7 +453,7 @@
                 <p>Ingeniera Industrial y Project Manager apasionada por liderar proyectos de alto impacto, gestión de equipos multidisciplinarios y entrega de iniciativas mediante metodologías ágiles.</p>
                 <a href="#proyectos" class="btn-dark-action">Ver Portafolio</a>
             </div>
-            <!-- Cambia "tu-foto-real.jpg" por el nombre de tu foto en GitHub -->
+            <!-- Cambia "tu-foto-real.jpg" por tu archivo de foto real en GitHub -->
             <div class="hero-photo-container">
                 <img src="tu-foto-real.jpg" alt="Karen Holguín">
             </div>
@@ -466,7 +467,7 @@
             </div>
         </div>
 
-        <!-- Tarjetas de Credenciales / Perfil Estilo Referencia -->
+        <!-- Credenciales / Perfil -->
         <div class="credentials-row-grid">
             <div class="cred-card-box">
                 <div class="cred-avatar-img"><img src="tu-foto-real.jpg" alt="KH"></div>
