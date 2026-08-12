@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karen Holguín | Senior IT Project Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --accent: #7C3AED;
+            --bg: #F9FAFB;
+            --card-bg: #FFFFFF;
+            --text-main: #111827;
+            --text-muted: #6B7280;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; padding: 40px 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { margin-bottom: 60px; }
+        h1 { font-size: 3rem; font-weight: 700; margin-bottom: 10px; }
+        .tagline { font-size: 1.25rem; color: var(--text-muted); }
+        .section-title { font-size: 1.5rem; margin: 40px 0 20px 0; display: flex; align-items: center; gap: 10px; color: var(--accent); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: var(--card-bg); padding: 25px; border-radius: 20px; border: 1px solid #E5E7EB; transition: 0.3s; }
+        .card:hover { border-color: var(--accent); transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+        .card h3 { margin-bottom: 10px; }
+        .card p { color: var(--text-muted); font-size: 0.95rem; }
+        .badge { display: inline-block; background: #F3E8FF; color: var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Karen Holguín</h1>
+            <p class="tagline">Senior IT Project Manager | Estratega en Transformación Digital</p>
+        </header>
+
+        <h2 class="section-title"><i class="fa-solid fa-rocket"></i> Transformación Digital e IA</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="badge">Proyecto País</span>
+                <h3>Facturación Electrónica (DGII)</h3>
+                <p>Liderazgo en el despliegue nacional para la transformación de procesos fiscales.</p>
+            </div>
+            <div class="card">
+                <span class="badge">Innovación / AI</span>
+                <h3>Detector de Anomalías (Microsoft)</h3>
+                <p>Incorporación de IA para automatizar la fiscalización y optimizar procesos de riesgo.</p>
+            </div>
+            <div class="card">
+                <span class="badge">Gestión del Cambio</span>
+                <h3>Adopción de Microsoft Copilot</h3>
+                <p>Despliegue operativo y capacitación estratégica en IA generativa institucional.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title"><i class="fa-solid fa-landmark"></i> Banca y Soluciones Financieras</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="badge">App Móvil</span>
+                <h3>Finanzas Personales (Popular / Strands)</h3>
+                <p>Gestión end-to-end con proveedor internacional (España) para herramientas de ahorro digital.</p>
+            </div>
+            <div class="card">
+                <span class="badge">Infraestructura</span>
+                <h3>Proyectos IBER (Confisa/Banreservas)</h3>
+                <p>Ejecución de entregas tecnológicas críticas bajo estrictos marcos bancarios.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title"><i class="fa-solid fa-shield-halved"></i> Infraestructura y Seguridad</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="badge">Ciberseguridad</span>
+                <h3>Revisiones Cloudflare (Poder Judicial)</h3>
+                <p>Gestión de iniciativas de ciberseguridad para la protección de infraestructura judicial.</p>
+            </div>
+            <div class="card">
+                <span class="badge">Colaboración</span>
+                <h3>Salas Webex / Contact Center</h3>
+                <p>Despliegue de infraestructura crítica para entornos de colaboración híbrida.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
