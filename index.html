@@ -355,7 +355,36 @@
             font-size: 0.95rem;
         }
 
-        /* Preparación y Educación con Etiquetas Estandarizadas */
+        /* Herramientas & Programas Section */
+        .tools-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .tool-badge {
+            background: var(--white);
+            color: var(--dark);
+            padding: 12px 24px;
+            border-radius: 16px;
+            font-weight: 600;
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .tool-badge:hover {
+            background: var(--primary-light);
+            border-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        /* Preparación y Educación */
         .education-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -513,6 +542,7 @@
         <ul class="nav-links">
             <li><a href="#">Inicio</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#herramientas">Herramientas</a></li>
             <li><a href="#preparacion">Preparación</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
@@ -544,14 +574,14 @@
 
     <!-- Brands & Ecosystem Trust Bar -->
     <div class="brands-section">
-        <h3>Ecosistema Profesional y Tecnológico</h3>
+        <h3>Experiencia y Ecosistema Profesional</h3>
         <div class="brands-grid">
             <div class="brand-group">
                 <p>Experiencia Laboral</p>
-                <span>DGII (Sector Público) & IQTek Solutions</span>
+                <span>DGII, IQTek Solutions (Consultoría TI), Banco Popular, Banreservas</span>
             </div>
             <div class="brand-group">
-                <p>Tecnologías & Proveedores Clave</p>
+                <p>Proveedores & Tecnologías</p>
                 <span>Microsoft, Strands, Cloudflare, Webex, Sidesys, Calabrio</span>
             </div>
         </div>
@@ -623,6 +653,24 @@
         </div>
     </section>
 
+    <!-- Herramientas y Programas Section -->
+    <section class="section" id="herramientas">
+        <div class="section-header">
+            <h2>Herramientas & Programas</h2>
+            <p>Dominio de software y plataformas tecnológicas para la gestión avanzada de proyectos y analítica.</p>
+        </div>
+        <div class="tools-grid">
+            <div class="tool-badge"><i class="fa-solid fa-list-check" style="color: var(--primary);"></i> Microsoft Project</div>
+            <div class="tool-badge"><i class="fa-brands fa-jira" style="color: var(--primary);"></i> Jira</div>
+            <div class="tool-badge"><i class="fa-solid fa-square-check" style="color: var(--primary);"></i> Asana</div>
+            <div class="tool-badge"><i class="fa-solid fa-cubes" style="color: var(--primary);"></i> Odoo</div>
+            <div class="tool-badge"><i class="fa-solid fa-infinity" style="color: var(--primary);"></i> Azure DevOps</div>
+            <div class="tool-badge"><i class="fa-solid fa-chart-column" style="color: var(--primary);"></i> Power BI</div>
+            <div class="tool-badge"><i class="fa-solid fa-circle-nodes" style="color: var(--primary);"></i> Miro</div>
+            <div class="tool-badge"><i class="fa-solid fa-check-to-slot" style="color: var(--primary);"></i> Trello</div>
+        </div>
+    </section>
+
     <!-- Preparación y Educación Section con Etiquetas Estandarizadas -->
     <section class="section" id="preparacion">
         <div class="section-header">
@@ -642,7 +690,7 @@
                 <p>Formación especializada enfocada en la integración de inteligencia artificial generativa dentro de la gestión de proyectos tecnológicos.</p>
             </div>
             <div class="edu-card">
-                <span class="edu-badge">Postgrado</span>
+                <span class="edu-badge">Posgrado</span>
                 <h3>Máster en Gestión de Proyectos</h3>
                 <p>Especialización avanzada en administración de proyectos bajo estándares internacionales y buenas prácticas del PMI.</p>
             </div>
@@ -657,7 +705,7 @@
                 <p>Universidad Dominico Americana (UNICDA). Desarrollo de competencias analíticas para la viabilidad de iniciativas estratégicas.</p>
             </div>
             <div class="edu-card">
-                <span class="edu-badge">Postgrado / Diplomado</span>
+                <span class="edu-badge">Diplomado</span>
                 <h3>Gerencia de la Experiencia del Cliente (CX)</h3>
                 <p>Instituto Tecnológico de Santo Domingo (INTEC). Enfoque estratégico en la satisfacción y optimización de la experiencia del usuario.</p>
             </div>
@@ -667,12 +715,12 @@
                 <p>Instituto Tecnológico de las Américas (ITLA). Aplicación de marcos de trabajo ágiles para la entrega iterativa de valor.</p>
             </div>
             <div class="edu-card">
-                <span class="edu-badge">Postgrado / Diplomado</span>
+                <span class="edu-badge">Diplomado</span>
                 <h3>Business Analytics y Big Data</h3>
                 <p>Instituto Tecnológico de las Américas (ITLA). Explotación de grandes volúmenes de datos para la inteligencia de negocios.</p>
             </div>
             <div class="edu-card">
-                <span class="edu-badge">Postgrado / Diplomado</span>
+                <span class="edu-badge">Diplomado</span>
                 <h3>Competencias para Mandos Medios</h3>
                 <p>Universidad Nacional Pedro Henríquez Ureña / UNIBE. Fortalecimiento de habilidades de liderazgo directivo y supervisión.</p>
             </div>
@@ -702,6 +750,7 @@
                 <ul class="footer-links">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#herramientas">Herramientas</a></li>
                     <li><a href="#preparacion">Preparación</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
