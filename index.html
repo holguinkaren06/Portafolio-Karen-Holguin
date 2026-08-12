@@ -40,7 +40,7 @@
         }
 
         .logo {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: var(--dark);
             display: flex;
@@ -100,7 +100,7 @@
         }
 
         .hero-content h1 {
-            font-size: 3rem;
+            font-size: 3.2rem;
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: 20px;
@@ -142,25 +142,28 @@
             border-radius: 35px;
             box-shadow: 0 20px 40px rgba(124, 58, 237, 0.1);
             text-align: center;
-            position: relative;
         }
 
         .avatar-container {
-            width: 150px;
-            height: 150px;
-            margin: 0 auto 20px auto;
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 25px auto;
             background: var(--white);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 10px 25px rgba(124, 58, 237, 0.15);
-            border: 4px solid var(--white);
+            box-shadow: 0 10px 25px rgba(124, 58, 237, 0.25);
+            border: 5px solid var(--white);
             overflow: hidden;
+            /* AQUÍ IRÁ TU FOTO REAL */
+            background-image: none; 
+            background-size: cover;
+            background-position: center;
         }
 
         .avatar-container i {
-            font-size: 4rem;
+            font-size: 5rem;
             color: var(--primary);
         }
 
@@ -303,7 +306,7 @@
             margin-bottom: 12px;
         }
 
-        .footer-links  a {
+        .footer-links a {
             color: #9CA3AF;
             text-decoration: none;
             transition: color 0.3s;
@@ -360,11 +363,11 @@
             <a href="#proyectos" class="btn-primary">Ver Portafolio</a>
         </div>
         <div class="hero-card">
-            <div class="avatar-container">
+            <div class="avatar-container" id="profileAvatar">
                 <i class="fa-solid fa-user-tie"></i>
             </div>
             <h3>Karen Holguín</h3>
-            <p style="color: var(--gray-text);">Senior IT Project Manager | DGII & Consultoría</p>
+            <p style="color: var(--gray-text);">Sr. IT Project Manager | Transformación Digital</p>
         </div>
     </section>
 
@@ -380,7 +383,7 @@
     <section class="section" id="proyectos">
         <div class="section-header">
             <h2>Portafolio de Proyectos</h2>
-            <p>Experiencia ejecutiva estructurada bajo los más altos estándares de gestión corporativa e institucional.</p>
+            <p>Experiencia ejecutiva estructurada bajo los más altos estándares de gestión corporativa.</p>
         </div>
 
         <div class="projects-grid">
@@ -388,7 +391,7 @@
             <div class="project-card">
                 <span class="project-badge">Estrategia País • DGII</span>
                 <h3>Facturación Electrónica</h3>
-                <p>Liderazgo integral en el despliegue de una iniciativa nacional de transformation fiscal, asegurando cumplimiento normativo y adopción masiva.</p>
+                <p>Liderazgo integral en el despliegue de una iniciativa nacional de transformación fiscal, asegurando cumplimiento normativo y adopción masiva.</p>
             </div>
 
             <!-- Project 2 -->
@@ -433,9 +436,16 @@
         <div class="footer-container">
             <div class="footer-col">
                 <h4>Karen Holguín</h4>
-                <p>Senior IT Project Manager con sólida formación en Ingeniería Industrial y gestión estratégica de proyectos tecnológicos.</p>
+                <p>Senior IT Project Manager | Gestión Estratégica de TI</p>
                 <p style="color: var(--white);"><i class="fa-solid fa-envelope"></i> holguinkaren06@gmail.com</p>
             </div>
             <div class="footer-col">
                 <h4>Enlaces Rápidos</h4>
                 <ul class="footer-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="mailto:holguinkaren06@gmail.com">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Especialidades</h4>
