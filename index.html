@@ -40,7 +40,7 @@
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 700;
             color: var(--dark);
             display: flex;
@@ -100,7 +100,7 @@
         }
 
         .hero-content h1 {
-            font-size: 3.2rem;
+            font-size: 3rem;
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: 20px;
@@ -134,7 +134,7 @@
             transform: translateY(-3px);
         }
 
-        /* Hero Avatar Card */
+        /* Hero Avatar Card con tu foto integrada */
         .hero-card {
             flex: 1;
             background: linear-gradient(135deg, var(--primary-light), #EDE9FE);
@@ -142,29 +142,28 @@
             border-radius: 35px;
             box-shadow: 0 20px 40px rgba(124, 58, 237, 0.1);
             text-align: center;
+            position: relative;
         }
 
         .avatar-container {
-            width: 180px;
-            height: 180px;
-            margin: 0 auto 25px auto;
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 20px auto;
             background: var(--white);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 10px 25px rgba(124, 58, 237, 0.25);
-            border: 5px solid var(--white);
+            box-shadow: 0 15px 30px rgba(124, 58, 237, 0.2);
+            border: 4px solid var(--white);
             overflow: hidden;
-            /* AQUÍ IRÁ TU FOTO REAL */
-            background-image: none; 
-            background-size: cover;
-            background-position: center;
         }
 
-        .avatar-container i {
-            font-size: 5rem;
-            color: var(--primary);
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
         }
 
         .hero-card h3 {
@@ -363,8 +362,37 @@
             <a href="#proyectos" class="btn-primary">Ver Portafolio</a>
         </div>
         <div class="hero-card">
-            <div class="avatar-container" id="profileAvatar">
-                <i class="fa-solid fa-user-tie"></i>
+            <div class="avatar-container">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhMVFRUVFRcVFRUVFRUVFRUVFRUXFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQFy0dHR0rKy0tLS0tLS0tLS8tLS0tKysrKysrKysrLS0tLS0rKysrKysrKysrKysrKysrKysrK//AABEIAMIBAwMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABAECAwUGCAf/xAA7EAACAQIEAwUFBwMEAwEAAAABAgADEQQFEiEGMUFRImFxgZGhBxQykbLB0fBCUoKi4fFTYhYjQ1P/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAQIDBAX/xAAfEQEBAQACAgMBAQAAAAAAAAAAAQIREiEDMUFRBGH/2gAMAwEAAhEDEQA/APcQAAAAAAAAAAAAAAAAAAAAAAAAMN7eKupNl3YAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMW3D/Z");
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-diagram-project" style="color: var(--primary);"></i> PM <span>Karen Holguín</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="mailto:holguinkaren06@gmail.com">Contacto</a></li>
+        </ul>
+        <a href="mailto:holguinkaren06@gmail.com" class="btn-contact">Contacto</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transforma la complejidad en <span>resultados de alto impacto</span></h1>
+            <p>Senior IT Project Manager especializada en la entrega de iniciativas tecnológicas complejas, transformación digital e IA en sectores altamente regulados como banca y gobierno.</p>
+            <a href="#proyectos" class="btn-primary">Ver Portafolio</a>
+        </div>
+        <div class="hero-card">
+            <div class="avatar-container">
+                <!-- Tu foto optimizada con tu rostro y esencia -->
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhMVFRUVFRcVFRUVFRUVFRUVFRUXFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQFy0dHR0rKy0tLS0tLS0tLS8tLS0tKysrKysrKysrLS0tLS0rKysrKysrKysrKysrKysrKysrK//AABEIAMIBAwMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABAECAwUGCAf/xAA7EAACAQIEAwUFBwMEAwEAAAABAgADEQQFEiEGMUFRImFxgZGhBxQykbLB0fBCUoKi4fFTYhYjQ1P/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAQIDBAX/xAAfEQEBAQACAgMBAQAAAAAAAAAAAQIREiEDMUFRBGH/2gAMAwEAAhEDEQA/APcQAAAAAAAAAAAAAAAAAAAAAAAAMN7eKupNl3YAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMm26sN7aY6M30ADbhm23VhvazPRm+gAbcMW3D/Z" alt="Karen Holguín">
             </div>
             <h3>Karen Holguín</h3>
             <p style="color: var(--gray-text);">Sr. IT Project Manager | Transformación Digital</p>
@@ -449,3 +477,17 @@
             </div>
             <div class="footer-col">
                 <h4>Especialidades</h4>
+                <ul class="footer-links">
+                    <li>Transformación Digital</li>
+                    <li>Gestión C-Level</li>
+                    <li>Proveedores Internacionales</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Karen Holguín. Todos los derechos reservados. Diseñado bajo estándares ejecutivos.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
