@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,6 @@
             line-height: 1.6;
         }
 
-        /* Contenedor principal flotante tipo tarjeta blanca */
         .main-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -45,7 +44,6 @@
             border: 1px solid rgba(124, 58, 237, 0.1);
         }
 
-        /* Navbar */
         nav {
             display: flex;
             justify-content: space-between;
@@ -104,7 +102,6 @@
             box-shadow: 0 6px 18px rgba(124, 58, 237, 0.3);
         }
 
-        /* Hero Section */
         .hero {
             padding: 50px 45px;
             display: flex;
@@ -153,7 +150,6 @@
             box-shadow: 0 15px 30px rgba(124, 58, 237, 0.4);
         }
 
-        /* Tarjeta con Foto Real HD (Ajustada para mostrar rostro completo, cabello y antebrazo) */
         .hero-card {
             flex: 0.9;
             background: linear-gradient(135deg, #FFFFFF 0%, var(--primary-light) 100%);
@@ -226,7 +222,6 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.02);
         }
 
-        /* Brands & Ecosystem Trust Bar */
         .brands-section {
             max-width: 1100px;
             margin: 40px auto;
@@ -267,7 +262,6 @@
             color: #F3F4F6;
         }
 
-        /* Section Containers */
         .section {
             padding: 60px 45px;
             border-top: 1px solid #E5E7EB;
@@ -290,7 +284,6 @@
             color: var(--gray-text);
         }
 
-        /* Portfolio Grid (Projects) */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -352,7 +345,6 @@
             font-size: 0.95rem;
         }
 
-        /* Herramientas & Programas Section */
         .tools-grid {
             display: flex;
             flex-wrap: wrap;
@@ -381,7 +373,6 @@
             transform: translateY(-3px);
         }
 
-        /* Preparación y Educación */
         .education-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -427,7 +418,6 @@
             letter-spacing: 0.5px;
         }
 
-        /* Footer / Contact Section */
         footer {
             background: var(--dark);
             color: var(--card-white);
@@ -534,126 +524,126 @@
         <!-- Navbar -->
         <nav>
             <div class="logo">
-                <i class="fa-solid fa-diagram-project" style="color: var(--primary);"></i> Portafolio Profesional <span>Karen Holguín</span>
+                <i class="fa-solid fa-diagram-project" style="color: var(--primary);"></i> Professional Portfolio <span>Karen Holguín</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#herramientas">Herramientas</a></li>
-                <li><a href="#preparacion">Preparación</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#education">Education</a></li>
             </ul>
-            <a href="#contacto" class="btn-contact">Contacto</a>
+            <a href="#contact" class="btn-contact">Contact</a>
         </nav>
 
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
-                <h1>Transformando ideas tecnológicas en <span>realidades de alto impacto</span></h1>
-                <p>Ingeniera Industrial y Project Manager apasionada por liderar proyectos de alto impacto, gestión de equipos multidisciplinarios, optimización de procesos y entrega de iniciativas mediante metodologías ágiles y buenas prácticas del PMI.</p>
-                <a href="#proyectos" class="btn-primary">Ver Portafolio</a>
+                <h1>Transforming tech ideas into <span>high-impact realities</span></h1>
+                <p>Industrial Engineer and Project Manager passionate about leading high-impact initiatives, driving cross-functional team collaboration, optimizing processes, and delivering results through agile methodologies and PMI best practices.</p>
+                <a href="#projects" class="btn-primary">View Portfolio</a>
             </div>
             
-            <!-- Tarjeta Corporativa con Foto Real HD (Encuadre optimizado) -->
+            <!-- Corporate Card with Real HD Photo -->
             <div class="hero-card">
                 <div class="executive-avatar">
                     <img src="karen-foto.jpeg" alt="Karen Holguín">
                 </div>
                 <h3>Karen Holguín</h3>
-                <div class="title-role">Ingeniera Industrial & Project Manager</div>
-                <p style="color: var(--gray-text); font-size: 0.85rem;">Gestión de Proyectos TI & Transformación Digital</p>
+                <div class="title-role">Industrial Engineer & Project Manager</div>
+                <p style="color: var(--gray-text); font-size: 0.85rem;">IT Project Management & Digital Transformation</p>
                 <div class="tags-container">
-                    <span class="hero-tag">Metodologías Ágiles / Scrum</span>
-                    <span class="hero-tag">Buenas Prácticas PMI</span>
+                    <span class="hero-tag">Agile Methodologies / Scrum</span>
+                    <span class="hero-tag">PMI Best Practices</span>
                 </div>
             </div>
         </section>
 
         <!-- Brands & Ecosystem Trust Bar -->
         <div class="brands-section">
-            <h3>Experiencia y Ecosistema Profesional</h3>
+            <h3>Professional Experience & Ecosystem</h3>
             <div class="brands-grid">
                 <div class="brand-group">
-                    <p>Experiencia Laboral</p>
-                    <span>DGII, IQTek Solutions (Consultoría TI), Banco Popular, Banreservas</span>
+                    <p>Work Experience</p>
+                    <span>DGII, IQTek Solutions (IT Consulting), Banco Popular, Banreservas</span>
                 </div>
                 <div class="brand-group">
-                    <p>Proveedores & Tecnologías</p>
+                    <p>Partners & Technologies</p>
                     <span>Microsoft, Strands, Cloudflare, Webex, Sidesys, Calabrio</span>
                 </div>
             </div>
         </div>
 
         <!-- Projects Section -->
-        <section class="section" id="proyectos">
+        <section class="section" id="projects">
             <div class="section-header">
-                <h2>Portafolio de Proyectos</h2>
-                <p>Experiencia ejecutiva estructurada bajo los más altos estándares de gestión corporativa e institucional.</p>
+                <h2>Project Portfolio</h2>
+                <p>Executive experience structured under the highest standards of corporate and institutional governance.</p>
             </div>
 
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <span class="project-badge">Estrategia País • DGII</span>
-                    <h3>Facturación Electrónica</h3>
-                    <p>Liderazgo integral en el despliegue de una iniciativa nacional de transformación fiscal, asegurando cumplimiento normativo y adopción masiva.</p>
+                    <span class="project-badge">Nationwide Strategy • DGII</span>
+                    <h3>Electronic Invoicing</h3>
+                    <p>Spearheaded the nationwide deployment of a major fiscal transformation initiative, ensuring regulatory compliance and widespread adoption.</p>
                 </div>
 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <span class="project-badge">Inteligencia Artificial • DGII</span>
-                    <h3>Detector de Anomalías (Microsoft)</h3>
-                    <p>Incorporación de inteligencia artificial en procesos fiscales de la República Dominicana para automatizar la mitigación de riesgos.</p>
+                    <span class="project-badge">Artificial Intelligence • DGII</span>
+                    <h3>Anomaly Detection System (Microsoft)</h3>
+                    <p>Integrated artificial intelligence capabilities into national tax processes to automate risk mitigation and operational security.</p>
                 </div>
 
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <span class="project-badge">Gestión del Cambio • DGII</span>
-                    <h3>Adopción de Microsoft Copilot</h3>
-                    <p>Despliegue operativo y capacitación estratégica en herramientas de IA generativa para optimizar la eficiencia institucional.</p>
+                    <span class="project-badge">Change Management • DGII</span>
+                    <h3>Microsoft Copilot Adoption</h3>
+                    <p>Led operational rollout and strategic training programs for generative AI tools to maximize institutional efficiency.</p>
                 </div>
 
                 <!-- Project 4 -->
                 <div class="project-card">
-                    <span class="project-badge">Apps Financieras • IQTek / Strands</span>
-                    <h3>Módulo de Finanzas Personales</h3>
-                    <p>Gestión end-to-end coordinando proveedores internacionales (Strands, España) para integrar herramientas de ahorro en soluciones móviles financieras.</p>
+                    <span class="project-badge">Financial Apps • IQTek / Strands</span>
+                    <h3>Personal Finance Module</h3>
+                    <p>Managed end-to-end delivery coordinating international vendors (Strands, Spain) to integrate built-in savings tools into mobile banking platforms.</p>
                 </div>
 
                 <!-- Project 5 -->
                 <div class="project-card">
-                    <span class="project-badge">Infraestructura & CX • DGII / Sidesys</span>
-                    <h3>Expansión del Sistema de Turnos (eFlow)</h3>
-                    <p>Liderazgo en el despliegue operativo e instalación física de equipos en oficinas nacionales junto al proveedor Sidesys, estandarizando la gestión de turnos institucionales.</p>
+                    <span class="project-badge">Infrastructure & CX • DGII / Sidesys</span>
+                    <h3>Queue Management Expansion (eFlow)</h3>
+                    <p>Directed operational rollout and physical equipment installation across national branch offices in partnership with Sidesys, standardizing service flow.</p>
                 </div>
 
                 <!-- Project 6 -->
                 <div class="project-card">
-                    <span class="project-badge">Optimización CX • DGII / Sidesys</span>
-                    <h3>Actualización de Versión & Analítica CX</h3>
-                    <p>Coordinación de actualización tecnológica del sistema de turnos y rediseño de interfaz en colaboración con Sidesys para potenciar el análisis de experiencia del cliente.</p>
+                    <span class="project-badge">CX Optimization • DGII / Sidesys</span>
+                    <h3>Version Upgrade & CX Analytics</h3>
+                    <p>Coordinated technical software upgrades and interface redesigns alongside Sidesys to enhance customer experience analytics.</p>
                 </div>
 
                 <!-- Project 7 -->
                 <div class="project-card">
-                    <span class="project-badge">Automatización CX • Webex / Calabrio</span>
-                    <h3>IVR Inteligente & Contact Center</h3>
-                    <p>Diseño de flujos de respuesta de voz interactiva y revisiones de seguridad técnica con proveedores para optimizar la experiencia del cliente.</p>
+                    <span class="project-badge">CX Automation • Webex / Calabrio</span>
+                    <h3>Smart IVR & Contact Center</h3>
+                    <p>Designed interactive voice response workflows and technical security reviews with vendors to streamline customer support operations.</p>
                 </div>
 
                 <!-- Project 8 -->
                 <div class="project-card">
-                    <span class="project-badge">Ciberseguridad • Cloudflare</span>
-                    <h3>Protección de Infraestructura Crítica</h3>
-                    <p>Coordinación de iniciativas de ciberseguridad avanzada y revisiones técnicas para blindar sistemas institucionales.</p>
+                    <span class="project-badge">Cybersecurity • Cloudflare</span>
+                    <h3>Critical Infrastructure Protection</h3>
+                    <p>Coordinated advanced cybersecurity initiatives and technical infrastructure reviews to safeguard institutional core systems.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Herramientas y Programas Section -->
-        <section class="section" id="herramientas">
+        <!-- Tools Section -->
+        <section class="section" id="tools">
             <div class="section-header">
-                <h2>Herramientas & Programas</h2>
-                <p>Dominio de software y plataformas tecnológicas para la gestión avanzada de proyectos y analítica.</p>
+                <h2>Tools & Software</h2>
+                <p>Proficiency in enterprise software and platforms for advanced project management and analytics.</p>
             </div>
             <div class="tools-grid">
                 <div class="tool-badge"><i class="fa-solid fa-list-check" style="color: var(--primary);"></i> Microsoft Project</div>
@@ -668,101 +658,101 @@
             </div>
         </section>
 
-        <!-- Preparación y Educación Section -->
-        <section class="section" id="preparacion">
+        <!-- Education Section -->
+        <section class="section" id="education">
             <div class="section-header">
-                <h2>Preparación Académica & Formación</h2>
-                <p>Constante evolución técnica y metodológica orientada a la excelencia en gestión, analítica y liderazgo directivo.</p>
+                <h2>Education & Professional Training</h2>
+                <p>Continuous technical and methodological growth oriented toward excellence in management, analytics, and leadership.</p>
             </div>
 
             <div class="education-grid">
                 <div class="edu-card">
-                    <span class="edu-badge">Formación Continua</span>
+                    <span class="edu-badge">Continuing Education</span>
                     <h3>Business Intelligence With Power BI</h3>
-                    <p>Capacitación enfocada en el análisis de datos, modelado y creación de tableros estratégicos para la toma de decisiones gerenciales.</p>
+                    <p>Training focused on data modeling, analysis, and building strategic dashboards to drive data-backed executive decisions.</p>
                 </div>
                 <div class="edu-card">
-                    <span class="edu-badge">Formación Continua</span>
-                    <h3>Gestión de Proyectos con IA Generativa</h3>
-                    <p>Formación especializada enfocada en la integración de inteligencia artificial generativa dentro de la gestión de proyectos tecnológicos.</p>
+                    <span class="edu-badge">Continuing Education</span>
+                    <h3>Project Management with Generative AI</h3>
+                    <p>Specialized training centered on integrating generative artificial intelligence tools into technology project lifecycles.</p>
                 </div>
                 <div class="edu-card">
-                    <span class="edu-badge">Posgrado</span>
-                    <h3>Máster en Gestión de Proyectos</h3>
-                    <p>Especialización avanzada en administración de proyectos bajo estándares internacionales y buenas prácticas del PMI.</p>
+                    <span class="edu-badge">Postgraduate</span>
+                    <h3>Master in Project Management</h3>
+                    <p>Advanced specialization in project administration following international standards and PMI methodologies.</p>
                 </div>
                 <div class="edu-card">
-                    <span class="edu-badge">Grado Universitario</span>
-                    <h3>Ingeniería Industrial</h3>
-                    <p>Universidad APEC (UNAPEC). Formación integral orientada al diseño, optimización y gestión de procesos productivos y organizacionales.</p>
+                    <span class="edu-badge">Bachelor Degree</span>
+                    <h3>Industrial Engineering</h3>
+                    <p>Universidad APEC (UNAPEC). Comprehensive foundation focused on the design, optimization, and management of operational processes.</p>
                 </div>
                 <div class="edu-card">
-                    <span class="edu-badge">Formación Especializada</span>
-                    <h3>Formulación, Análisis y Evaluación de Proyectos</h3>
-                    <p>Universidad Dominico Americana (UNICDA). Desarrollo de competencias analíticas para la viabilidad de iniciativas estratégicas.</p>
+                    <span class="edu-badge">Specialized Training</span>
+                    <h3>Project Formulation, Analysis & Evaluation</h3>
+                    <p>Universidad Dominico Americana (UNICDA). Developed analytical frameworks to determine the viability of strategic initiatives.</p>
                 </div>
                 <div class="edu-card">
-                    <span class="edu-badge">Diplomado</span>
-                    <h3>Gerencia de la Experiencia del Cliente (CX)</h3>
-                    <p>Instituto Tecnológico de Santo Domingo (INTEC). Enfoque estratégico en la satisfacción y optimización de la experiencia del usuario.</p>
+                    <span class="edu-badge">Professional Diploma</span>
+                    <h3>Customer Experience (CX) Management</h3>
+                    <p>Instituto Tecnológico de Santo Domingo (INTEC). Strategic focus on service satisfaction and end-user journey optimization.</p>
                 </div>
                 <div class="edu-card">
-                    <span class="edu-badge">Formación Especializada</span>
-                    <h3>Manejo de Proyectos con Metodología Scrum y Agile</h3>
-                    <p>Instituto Tecnológico de las Américas (ITLA). Aplicación de marcos de trabajo ágiles para la entrega iterativa de valor.</p>
+                    <span class="edu-badge">Specialized Training</span>
+                    <h3>Agile & Scrum Project Management</h3>
+                    <p>Instituto Tecnológico de las Américas (ITLA). Application of agile frameworks to drive iterative value delivery.</p>
                 </div>
                 <div class="edu-card">
-                    <span class="edu-badge">Diplomado</span>
-                    <h3>Business Analytics y Big Data</h3>
-                    <p>Instituto Tecnológico de las Américas (ITLA). Explotación de grandes volúmenes de datos para la inteligencia de negocios.</p>
+                    <span class="edu-badge">Professional Diploma</span>
+                    <h3>Business Analytics & Big Data</h3>
+                    <p>Instituto Tecnológico de las Américas (ITLA). Leveraging large-scale data assets to extract business intelligence.</p>
                 </div>
                 <div class="edu-card">
-                    <span class="edu-badge">Diplomado</span>
-                    <h3>Competencias para Mandos Medios</h3>
-                    <p>Universidad Nacional Pedro Henríquez Ureña / UNIBE. Fortalecimiento de habilidades de liderazgo directivo y supervisión.</p>
+                    <span class="edu-badge">Professional Diploma</span>
+                    <h3>Middle Management Competencies</h3>
+                    <p>UNPHU / UNIBE. Strengthening core executive leadership, communication, and supervisory capabilities.</p>
                 </div>
                 <div class="edu-card">
-                    <span class="edu-badge">Formación Especializada</span>
-                    <h3>Diseño UX/UI (User Experience / User Interface)</h3>
-                    <p>Instituto Tecnológico de las Américas (ITLA). Fundamentos de diseño centrado en el usuario para interfaces digitales.</p>
+                    <span class="edu-badge">Specialized Training</span>
+                    <h3>UX/UI Design Fundamentals</h3>
+                    <p>Instituto Tecnológico de las Américas (ITLA). Core concepts of user-centered design for digital interface creation.</p>
                 </div>
             </div>
         </section>
 
         <!-- Footer / Contact Section -->
-        <footer id="contacto">
+        <footer id="contact">
             <div class="footer-container">
                 <div class="footer-col">
                     <h4>Karen Holguín</h4>
-                    <p>Ingeniera Industrial y Senior IT Project Manager especializada en transformación digital y gestión de proyectos.</p>
+                    <p>Industrial Engineer and Senior IT Project Manager specializing in digital transformation and executive delivery.</p>
                     <p style="color: var(--card-white);"><i class="fa-solid fa-envelope"></i> holguinkaren06@gmail.com</p>
                     <p style="color: var(--card-white);"><i class="fa-solid fa-phone"></i> 809-968-4680</p>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/karen-holguin-06102000/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="mailto:holguinkaren06@gmail.com" title="Correo Electrónico"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="mailto:holguinkaren06@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4>Enlaces Rápidos</h4>
+                    <h4>Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#proyectos">Proyectos</a></li>
-                        <li><a href="#herramientas">Herramientas</a></li>
-                        <li><a href="#preparacion">Preparación</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#tools">Tools</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Especialidades</h4>
+                    <h4>Specialties</h4>
                     <ul class="footer-links">
-                        <li>Transformación Digital</li>
-                        <li>Gestión de Proyectos PMI / Scrum</li>
-                        <li>Gerencia de Experiencia del Cliente (CX)</li>
+                        <li>Digital Transformation</li>
+                        <li>PMI / Scrum Project Management</li>
+                        <li>Customer Experience (CX) Leadership</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Karen Holguín. Todos los derechos reservados. Diseñado bajo estándares ejecutivos.</p>
+                <p>&copy; 2026 Karen Holguín. All rights reserved. Designed to executive standards.</p>
             </div>
         </footer>
 
