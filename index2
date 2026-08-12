@@ -18,412 +18,76 @@
             --radius-inner: 24px;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        body { background-color: var(--bg-canvas); color: var(--dark-main); padding: 20px; line-height: 1.5; }
+        
+        .main-container { max-width: 1200px; margin: 0 auto; background-color: var(--card-white); border-radius: var(--radius-outer); box-shadow: 0 25px 50px rgba(0,0,0,0.06); overflow: hidden; border: 1px solid rgba(0,0,0,0.04); }
 
-        body {
-            background-color: var(--bg-canvas);
-            color: var(--dark-main);
-            padding: 20px;
-            line-height: 1.5;
-        }
+        .top-navbar { display: flex; justify-content: space-between; align-items: center; padding: 25px 45px; border-bottom: 1px solid var(--border-color); }
+        .brand-logo-pill { background: var(--light-bg); padding: 8px 20px; border-radius: 30px; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; gap: 8px; color: var(--dark-main); }
+        .nav-links-center { display: flex; gap: 35px; list-style: none; }
+        .nav-links-center a { text-decoration: none; color: var(--gray-text); font-weight: 500; font-size: 0.9rem; transition: color 0.3s; }
+        .nav-links-center a:hover { color: var(--dark-main); }
+        .nav-cta-pill { background-color: var(--dark-main); color: var(--card-white); padding: 8px 22px; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
 
-        .main-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: var(--card-white);
-            border-radius: var(--radius-outer);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.06);
-            overflow: hidden;
-            border: 1px solid rgba(0,0,0,0.04);
-        }
+        .hero-top-section { padding: 50px 45px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; border-bottom: 1px solid var(--border-color); }
+        .hero-top-section h1 { font-size: 2.8rem; font-weight: 700; line-height: 1.15; margin-bottom: 15px; color: var(--dark-main); }
+        .hero-top-section p { font-size: 0.98rem; color: var(--gray-text); margin-bottom: 25px; }
+        .btn-dark-action { display: inline-block; background-color: var(--dark-main); color: var(--card-white); padding: 12px 28px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+        
+        .hero-photo-container { width: 100%; height: 280px; border-radius: var(--radius-inner); overflow: hidden; background-color: var(--light-bg); }
+        .hero-photo-container img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
 
-        .top-navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px 45px;
-            border-bottom: 1px solid var(--border-color);
-        }
+        .curved-banner-padding { padding: 40px 45px; }
+        .curved-dark-card-box { background: var(--dark-main); border-radius: var(--radius-outer); padding: 50px; color: var(--card-white); display: flex; justify-content: space-between; align-items: center; }
+        .curved-dark-card-box h2 { font-size: 2.3rem; font-weight: 600; max-width: 550px; line-height: 1.2; }
+        .btn-light-action { background: var(--card-white); color: var(--dark-main); padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9rem; white-space: nowrap; }
 
-        .brand-logo-pill {
-            background: var(--light-bg);
-            padding: 8px 20px;
-            border-radius: 30px;
-            font-size: 0.85rem;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--dark-main);
-        }
+        .credentials-row-grid { padding: 0 45px 40px 45px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .cred-card-box { background: var(--light-bg); padding: 20px; border-radius: var(--radius-inner); display: flex; align-items: center; gap: 15px; }
+        .cred-avatar-img { width: 45px; height: 45px; border-radius: 50%; background: var(--border-color); overflow: hidden; flex-shrink: 0; }
+        .cred-avatar-img img { width: 100%; height: 100%; object-fit: cover; }
+        .cred-info h4 { font-size: 0.9rem; font-weight: 600; color: var(--dark-main); }
+        .cred-info p { font-size: 0.78rem; color: var(--gray-text); }
 
-        .nav-links-center {
-            display: flex;
-            gap: 35px;
-            list-style: none;
-        }
+        .section-container-box { padding: 40px 45px 60px 45px; border-top: 1px solid var(--border-color); }
+        .section-title-wrapper { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; }
+        .section-title-wrapper h2 { font-size: 1.8rem; font-weight: 700; color: var(--dark-main); }
+        .section-title-wrapper p { color: var(--gray-text); font-size: 0.9rem; }
 
-        .nav-links-center a {
-            text-decoration: none;
-            color: var(--gray-text);
-            font-weight: 500;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
+        .projects-two-column-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
+        .project-item-card { background: var(--light-bg); border-radius: var(--radius-inner); padding: 30px; border: 1px solid rgba(0,0,0,0.03); }
+        .project-tag-top { margin-bottom: 15px; }
+        .tag-pill-badge { background: var(--card-white); padding: 4px 12px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; color: var(--dark-main); }
+        .project-item-card h3 { font-size: 1.2rem; margin-bottom: 8px; color: var(--dark-main); }
+        .project-item-card p { color: var(--gray-text); font-size: 0.9rem; margin-bottom: 20px; }
 
-        .nav-links-center a:hover {
-            color: var(--dark-main);
-        }
+        .tools-pills-flex { display: flex; flex-wrap: wrap; gap: 12px; }
+        .tool-pill-badge { background: var(--light-bg); padding: 10px 20px; border-radius: 14px; font-weight: 600; font-size: 0.9rem; border: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center; gap: 8px; }
 
-        .nav-cta-pill {
-            background-color: var(--dark-main);
-            color: var(--card-white);
-            padding: 8px 22px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
+        .education-three-column-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .edu-item-card { background: var(--light-bg); border-radius: var(--radius-inner); padding: 25px; }
+        .edu-tag-badge { display: inline-block; background: var(--card-white); padding: 4px 10px; border-radius: 8px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; margin-bottom: 10px; color: var(--dark-main); }
+        .edu-item-card h3 { font-size: 1rem; font-weight: 600; color: var(--dark-main); margin-bottom: 6px; }
+        .edu-item-card p { font-size: 0.82rem; color: var(--gray-text); }
 
-        .hero-top-section {
-            padding: 50px 45px;
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 40px;
-            align-items: center;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .hero-top-section h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            line-height: 1.15;
-            margin-bottom: 15px;
-            color: var(--dark-main);
-        }
-
-        .hero-top-section p {
-            font-size: 0.98rem;
-            color: var(--gray-text);
-            margin-bottom: 25px;
-        }
-
-        .btn-dark-action {
-            display: inline-block;
-            background-color: var(--dark-main);
-            color: var(--card-white);
-            padding: 12px 28px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-
-        .hero-photo-container {
-            width: 100%;
-            height: 280px;
-            border-radius: var(--radius-inner);
-            overflow: hidden;
-            background-color: var(--light-bg);
-        }
-
-        .hero-photo-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: top center;
-        }
-
-        .curved-banner-padding {
-            padding: 40px 45px;
-        }
-
-        .curved-dark-card-box {
-            background: var(--dark-main);
-            border-radius: var(--radius-outer);
-            padding: 50px;
-            color: var(--card-white);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .curved-dark-card-box h2 {
-            font-size: 2.3rem;
-            font-weight: 600;
-            max-width: 550px;
-            line-height: 1.2;
-        }
-
-        .btn-light-action {
-            background: var(--card-white);
-            color: var(--dark-main);
-            padding: 12px 24px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            white-space: nowrap;
-        }
-
-        .credentials-row-grid {
-            padding: 0 45px 40px 45px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .cred-card-box {
-            background: var(--light-bg);
-            padding: 20px;
-            border-radius: var(--radius-inner);
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .cred-avatar-img {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background: var(--border-color);
-            overflow: hidden;
-            flex-shrink: 0;
-        }
-
-        .cred-avatar-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .cred-info h4 {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--dark-main);
-        }
-
-        .cred-info p {
-            font-size: 0.78rem;
-            color: var(--gray-text);
-        }
-
-        .section-container-box {
-            padding: 40px 45px 60px 45px;
-            border-top: 1px solid var(--border-color);
-        }
-
-        .section-title-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            margin-bottom: 30px;
-        }
-
-        .section-title-wrapper h2 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--dark-main);
-        }
-
-        .section-title-wrapper p {
-            color: var(--gray-text);
-            font-size: 0.9rem;
-        }
-
-        .projects-two-column-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-        }
-
-        .project-item-card {
-            background: var(--light-bg);
-            border-radius: var(--radius-inner);
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            border: 1px solid rgba(0,0,0,0.03);
-        }
-
-        .project-tag-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-
-        .tag-pill-badge {
-            background: var(--card-white);
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: var(--dark-main);
-        }
-
-        .project-item-card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 8px;
-            color: var(--dark-main);
-        }
-
-        .project-item-card p {
-            color: var(--gray-text);
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-        }
-
-        .tools-pills-flex {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .tool-pill-badge {
-            background: var(--light-bg);
-            padding: 10px 20px;
-            border-radius: 14px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            border: 1px solid rgba(0,0,0,0.04);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .education-three-column-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .edu-item-card {
-            background: var(--light-bg);
-            border-radius: var(--radius-inner);
-            padding: 25px;
-        }
-
-        .edu-tag-badge {
-            display: inline-block;
-            background: var(--card-white);
-            padding: 4px 10px;
-            border-radius: 8px;
-            font-size: 0.7rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            color: var(--dark-main);
-        }
-
-        .edu-item-card h3 {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--dark-main);
-            margin-bottom: 6px;
-        }
-
-        .edu-item-card p {
-            font-size: 0.82rem;
-            color: var(--gray-text);
-        }
-
-        footer {
-            background-color: var(--dark-main);
-            color: var(--card-white);
-            padding: 50px 45px 30px 45px;
-            border-top-left-radius: 28px;
-            border-top-right-radius: 28px;
-        }
-
-        .footer-grid-layout {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .footer-col-content h4 {
-            font-size: 1rem;
-            margin-bottom: 12px;
-            color: var(--card-white);
-        }
-
-        .footer-col-content p {
-            color: #A8A29E;
-            font-size: 0.85rem;
-            margin-bottom: 10px;
-        }
-
-        .footer-links-list {
-            list-style: none;
-        }
-
-        .footer-links-list li {
-            margin-bottom: 8px;
-        }
-
-        .footer-links-list a {
-            color: #A8A29E;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-
-        .footer-social-icons {
-            display: flex;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .footer-social-icons a {
-            width: 34px;
-            height: 34px;
-            background: rgba(255,255,255,0.08);
-            color: var(--card-white);
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-        }
-
-        .footer-bottom-bar {
-            padding-top: 20px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            text-align: center;
-            color: #78716C;
-            font-size: 0.8rem;
-        }
-
-        @media (max-width: 768px) {
-            .hero-top-section, .projects-two-column-grid, .education-three-column-grid, .footer-grid-layout, .credentials-row-grid {
-                grid-template-columns: 1fr;
-            }
-            .curved-dark-card-box {
-                flex-direction: column;
-                gap: 20px;
-                text-align: center;
-            }
-            .nav-links-center {
-                display: none;
-            }
-        }
+        footer { background-color: var(--dark-main); color: var(--card-white); padding: 50px 45px 30px 45px; border-top-left-radius: 28px; border-top-right-radius: 28px; }
+        .footer-grid-layout { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col-content h4 { font-size: 1rem; margin-bottom: 12px; color: var(--card-white); }
+        .footer-col-content p { color: #A8A29E; font-size: 0.85rem; margin-bottom: 10px; }
+        .footer-links-list { list-style: none; }
+        .footer-links-list li { margin-bottom: 8px; }
+        .footer-links-list a { color: #A8A29E; text-decoration: none; font-size: 0.85rem; }
+        .footer-social-icons { display: flex; gap: 10px; margin-top: 15px; }
+        .footer-social-icons a { width: 34px; height: 34px; background: rgba(255,255,255,0.08); color: var(--card-white); display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; }
+        .footer-bottom-bar { padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: #78716C; font-size: 0.8rem; }
     </style>
 </head>
 <body>
 
     <div class="main-container">
-
         <div class="top-navbar">
-            <div class="brand-logo-pill">
-                <i class="fa-solid fa-diagram-project"></i> KH Portfolio
-            </div>
+            <div class="brand-logo-pill"><i class="fa-solid fa-diagram-project"></i> KH Portfolio</div>
             <ul class="nav-links-center">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
@@ -477,63 +141,47 @@
 
         <section class="section-container-box" id="proyectos">
             <div class="section-title-wrapper">
-                <div>
-                    <h2>Portafolio de Proyectos</h2>
-                    <p>Iniciativas estratégicas bajo estándares de gestión corporativa.</p>
-                </div>
+                <div><h2>Portafolio de Proyectos</h2><p>Iniciativas estratégicas bajo estándares de gestión corporativa.</p></div>
             </div>
-
             <div class="projects-two-column-grid">
                 <div class="project-item-card">
                     <div>
-                        <div class="project-tag-top">
-                            <span class="tag-pill-badge">Estrategia País • DGII</span>
-                        </div>
+                        <div class="project-tag-top"><span class="tag-pill-badge">Estrategia País • DGII</span></div>
                         <h3>Facturación Electrónica</h3>
                         <p>Liderazgo integral en el despliegue de una iniciativa nacional de transformación fiscal, asegurando cumplimiento normativo y adopción masiva.</p>
                     </div>
                 </div>
                 <div class="project-item-card">
                     <div>
-                        <div class="project-tag-top">
-                            <span class="tag-pill-badge">Inteligencia Artificial • DGII</span>
-                        </div>
+                        <div class="project-tag-top"><span class="tag-pill-badge">Inteligencia Artificial • DGII</span></div>
                         <h3>Detector de Anomalías (Microsoft)</h3>
                         <p>Incorporación de inteligencia artificial en procesos fiscales de la República Dominicana para automatizar la mitigación de riesgos.</p>
                     </div>
                 </div>
                 <div class="project-item-card">
                     <div>
-                        <div class="project-tag-top">
-                            <span class="tag-pill-badge">Gestión del Cambio • DGII</span>
-                        </div>
+                        <div class="project-tag-top"><span class="tag-pill-badge">Gestión del Cambio • DGII</span></div>
                         <h3>Adopción de Microsoft Copilot</h3>
                         <p>Despliegue operativo y capacitación estratégica en herramientas de IA generativa para optimizar la eficiencia institucional.</p>
                     </div>
                 </div>
                 <div class="project-item-card">
                     <div>
-                        <div class="project-tag-top">
-                            <span class="tag-pill-badge">Apps Financieras • IQTek / Strands</span>
-                        </div>
+                        <div class="project-tag-top"><span class="tag-pill-badge">Apps Financieras • IQTek / Strands</span></div>
                         <h3>Módulo de Finanzas Personales</h3>
                         <p>Gestión end-to-end coordinando proveedores internacionales para integrar herramientas de ahorro en soluciones móviles financieras.</p>
                     </div>
                 </div>
                 <div class="project-item-card">
                     <div>
-                        <div class="project-tag-top">
-                            <span class="tag-pill-badge">Infraestructura & CX • DGII / Sidesys</span>
-                        </div>
+                        <div class="project-tag-top"><span class="tag-pill-badge">Infraestructura & CX • DGII / Sidesys</span></div>
                         <h3>Expansión del Sistema de Turnos (eFlow)</h3>
                         <p>Liderazgo en el despliegue operativo e instalación física de equipos en oficinas nacionales, estandarizando la gestión de turnos.</p>
                     </div>
                 </div>
                 <div class="project-item-card">
                     <div>
-                        <div class="project-tag-top">
-                            <span class="tag-pill-badge">Ciberseguridad • Cloudflare</span>
-                        </div>
+                        <div class="project-tag-top"><span class="tag-pill-badge">Ciberseguridad • Cloudflare</span></div>
                         <h3>Protección de Infraestructura Crítica</h3>
                         <p>Coordinación de iniciativas de ciberseguridad avanzada y revisiones técnicas para blindar sistemas institucionales.</p>
                     </div>
@@ -543,10 +191,7 @@
 
         <section class="section-container-box" id="herramientas">
             <div class="section-title-wrapper">
-                <div>
-                    <h2>Herramientas & Programas</h2>
-                    <p>Dominio de plataformas para gestión avanzada y analítica.</p>
-                </div>
+                <div><h2>Herramientas & Programas</h2><p>Dominio de plataformas para gestión avanzada y analítica.</p></div>
             </div>
             <div class="tools-pills-flex">
                 <div class="tool-pill-badge"><i class="fa-solid fa-list-check" style="color: var(--gray-text);"></i> Microsoft Project</div>
@@ -563,43 +208,15 @@
 
         <section class="section-container-box" id="preparacion">
             <div class="section-title-wrapper">
-                <div>
-                    <h2>Preparación Académica & Formación</h2>
-                    <p>Evolución técnica y metodológica continua.</p>
-                </div>
+                <div><h2>Preparación Académica & Formación</h2><p>Evolución técnica y metodológica continua.</p></div>
             </div>
-
             <div class="education-three-column-grid">
-                <div class="edu-item-card">
-                    <span class="edu-tag-badge">Formación Continua</span>
-                    <h3>Power BI & BI</h3>
-                    <p>Análisis de datos y tableros estratégicos para la toma de decisiones.</p>
-                </div>
-                <div class="edu-item-card">
-                    <span class="edu-tag-badge">Posgrado</span>
-                    <h3>Máster en Gestión de Proyectos</h3>
-                    <p>Especialización avanzada bajo estándares internacionales PMI.</p>
-                </div>
-                <div class="edu-item-card">
-                    <span class="edu-tag-badge">Grado Universitario</span>
-                    <h3>Ingeniería Industrial</h3>
-                    <p>Universidad APEC (UNAPEC). Optimización y procesos.</p>
-                </div>
-                <div class="edu-item-card">
-                    <span class="edu-tag-badge">Diplomado</span>
-                    <h3>Gerencia de Experiencia (CX)</h3>
-                    <p>Instituto Tecnológico de Santo Domingo (INTEC).</p>
-                </div>
-                <div class="edu-item-card">
-                    <span class="edu-tag-badge">Especializada</span>
-                    <h3>Scrum y Metodologías Ágiles</h3>
-                    <p>ITLA. Marcos de trabajo para entrega iterativa de valor.</p>
-                </div>
-                <div class="edu-item-card">
-                    <span class="edu-tag-badge">Diplomado</span>
-                    <h3>Business Analytics & Big Data</h3>
-                    <p>Explotación de datos para la inteligencia de negocios.</p>
-                </div>
+                <div class="edu-item-card"><span class="edu-tag-badge">Formación Continua</span><h3>Power BI & BI</h3><p>Análisis de datos y tableros estratégicos.</p></div>
+                <div class="edu-item-card"><span class="edu-tag-badge">Posgrado</span><h3>Máster en Gestión de Proyectos</h3><p>Especialización avanzada bajo estándares PMI.</p></div>
+                <div class="edu-item-card"><span class="edu-tag-badge">Grado</span><h3>Ingeniería Industrial</h3><p>Universidad APEC (UNAPEC).</p></div>
+                <div class="edu-item-card"><span class="edu-tag-badge">Diplomado</span><h3>Gerencia de Experiencia (CX)</h3><p>Instituto Tecnológico de Santo Domingo (INTEC).</p></div>
+                <div class="edu-item-card"><span class="edu-tag-badge">Especializada</span><h3>Scrum y Metodologías Ágiles</h3><p>ITLA.</p></div>
+                <div class="edu-item-card"><span class="edu-tag-badge">Diplomado</span><h3>Business Analytics & Big Data</h3><p>Explotación de datos.</p></div>
             </div>
         </section>
 
@@ -607,34 +224,26 @@
             <div class="footer-grid-layout">
                 <div class="footer-col-content">
                     <h4>Karen Holguín</h4>
-                    <p>Ingeniera Industrial y Senior IT Project Manager especializada en gestión de proyectos TI y transformación digital.</p>
+                    <p>Ingeniera Industrial y Senior IT Project Manager.</p>
                     <p><i class="fa-solid fa-envelope"></i> holguinkaren06@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> 809-968-4680</p>
                     <div class="footer-social-icons">
                         <a href="https://www.linkedin.com/in/karen-holguin-06102000/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="mailto:holguinkaren06@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="footer-col-content">
-                    <h4>Enlaces Rápidos</h4>
+                    <h4>Enlaces</h4>
                     <ul class="footer-links-list">
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#proyectos">Proyectos</a></li>
-                        <li><a href="#herramientas">Herramientas</a></li>
-                        <li><a href="#preparacion">Preparación</a></li>
                     </ul>
                 </div>
                 <div class="footer-col-content">
                     <h4>Trayectoria</h4>
-                    <p><strong>Empresas:</strong> DGII, IQTek Solutions (Consultoría TI), Banco Popular, Banreservas</p>
+                    <p>DGII, IQTek, Popular, Banreservas</p>
                 </div>
             </div>
-            <div class="footer-bottom-bar">
-                <p>&copy; 2026 Karen Holguín. Todos los derechos reservados.</p>
-            </div>
+            <div class="footer-bottom-bar"><p>&copy; 2026 Karen Holguín.</p></div>
         </footer>
-
     </div>
-
 </body>
 </html>
