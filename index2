@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karen Holguín | Senior IT Project Manager</title>
+    <title>Karen Holguín | Senior IT Project Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --bg-canvas: #EAE6DF;
+            --bg-canvas: #E6E2D8;
             --container-bg: #FFFFFF;
             --dark-main: #1C1917;
             --gray-text: #78716C;
             --light-bg: #F5F5F4;
             --border-color: #E7E5E4;
-            --radius-outer: 32px;
+            --radius-outer: 36px;
             --radius-inner: 24px;
         }
 
@@ -29,32 +29,33 @@
         body {
             background-color: var(--bg-canvas);
             color: var(--dark-main);
-            padding: 20px;
+            padding: 24px;
             line-height: 1.5;
         }
 
-        .main-wrapper {
+        /* Contenedor principal flotante idéntico al mockup */
+        .mockup-wrapper {
             max-width: 1200px;
             margin: 0 auto;
             background-color: var(--container-bg);
             border-radius: var(--radius-outer);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.06);
             overflow: hidden;
-            border: 1px solid rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.04);
         }
 
-        /* 1. Header / Navbar Superior */
-        .top-nav-bar {
+        /* 1. Header Superior Minimalista */
+        .top-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 25px 40px;
+            padding: 24px 45px;
             border-bottom: 1px solid var(--border-color);
         }
 
-        .nav-logo-tag {
+        .header-logo-pill {
             background: var(--light-bg);
-            padding: 8px 18px;
+            padding: 8px 20px;
             border-radius: 30px;
             font-size: 0.85rem;
             font-weight: 700;
@@ -63,13 +64,13 @@
             gap: 8px;
         }
 
-        .nav-menu-links {
+        .header-center-links {
             display: flex;
-            gap: 30px;
+            gap: 35px;
             list-style: none;
         }
 
-        .nav-menu-links a {
+        .header-center-links a {
             text-decoration: none;
             color: var(--gray-text);
             font-weight: 500;
@@ -77,79 +78,80 @@
             transition: color 0.3s;
         }
 
-        .nav-menu-links a:hover {
+        .header-center-links a:hover {
             color: var(--dark-main);
         }
 
-        .nav-contact-btn {
+        .header-cta-btn {
             background-color: var(--dark-main);
             color: var(--container-bg);
-            padding: 8px 22px;
-            border-radius: 20px;
+            padding: 9px 24px;
+            border-radius: 24px;
             text-decoration: none;
             font-size: 0.85rem;
             font-weight: 500;
         }
 
-        /* 2. Hero Section 1 (Bloque Superior con Foto) */
-        .hero-section-one {
-            padding: 50px 40px;
+        /* 2. Primer Bloque Hero (Título izq + Foto der con marco suave) */
+        .hero-block-one {
+            padding: 60px 45px;
             display: grid;
             grid-template-columns: 1.2fr 0.8fr;
-            gap: 40px;
+            gap: 50px;
             align-items: center;
             border-bottom: 1px solid var(--border-color);
         }
 
-        .hero-section-one h1 {
-            font-size: 2.8rem;
+        .hero-block-one h1 {
+            font-size: 3rem;
             font-weight: 700;
             line-height: 1.15;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
             color: var(--dark-main);
         }
 
-        .hero-section-one p {
-            font-size: 0.98rem;
+        .hero-block-one p {
+            font-size: 1rem;
             color: var(--gray-text);
             margin-bottom: 25px;
         }
 
-        .btn-main-action {
+        .hero-action-btn {
             display: inline-block;
             background-color: var(--dark-main);
             color: var(--container-bg);
-            padding: 12px 28px;
-            border-radius: 25px;
+            padding: 14px 32px;
+            border-radius: 28px;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
         }
 
-        .hero-photo-box {
+        .hero-image-frame {
             width: 100%;
-            height: 280px;
+            height: 300px;
             border-radius: var(--radius-inner);
             overflow: hidden;
             background-color: var(--light-bg);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.04);
         }
 
-        .hero-photo-box img {
+        .hero-image-frame img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: top center;
         }
 
-        /* 3. Hero Section 2 (Banner Curvo Oscuro Central Estilo Referencia) */
-        .curved-banner-container {
-            padding: 40px;
+        /* 3. Segundo Bloque: Gran Banner Curvo Oscuro (Idéntico al mockup) */
+        .dark-curved-section {
+            padding: 45px;
         }
 
-        .curved-dark-hero-card {
+        .dark-curved-card {
             background: var(--dark-main);
             border-radius: var(--radius-outer);
-            padding: 50px;
+            padding: 60px;
             color: var(--container-bg);
             display: flex;
             justify-content: space-between;
@@ -158,153 +160,154 @@
             overflow: hidden;
         }
 
-        .curved-dark-hero-card h2 {
-            font-size: 2.2rem;
+        .dark-curved-card h2 {
+            font-size: 2.4rem;
             font-weight: 600;
-            max-width: 550px;
+            max-width: 600px;
             line-height: 1.2;
         }
 
-        .btn-light-action {
+        .banner-white-btn {
             background: var(--container-bg);
             color: var(--dark-main);
-            padding: 12px 24px;
-            border-radius: 25px;
+            padding: 14px 28px;
+            border-radius: 28px;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
             white-space: nowrap;
         }
 
-        /* 4. Mini Barra de Perfiles / Credenciales (Estilo Tarjetas Horizontales de Referencia) */
-        .credentials-row {
-            padding: 0 40px 40px 40px;
+        /* 4. Tercer Bloque: Fila de Tarjetas Mini de Perfiles (Mockup style) */
+        .mini-profiles-row {
+            padding: 0 45px 45px 45px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
 
-        .credential-card-item {
+        .mini-profile-card {
             background: var(--light-bg);
-            padding: 20px;
+            padding: 20px 24px;
             border-radius: var(--radius-inner);
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 16px;
+            border: 1px solid rgba(0,0,0,0.03);
         }
 
-        .credential-avatar {
-            width: 45px;
-            height: 45px;
+        .mini-avatar-circle {
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             background: var(--border-color);
             overflow: hidden;
             flex-shrink: 0;
         }
 
-        .credential-avatar img {
+        .mini-avatar-circle img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
 
-        .credential-text h4 {
-            font-size: 0.9rem;
+        .mini-profile-info h4 {
+            font-size: 0.92rem;
             font-weight: 600;
             color: var(--dark-main);
         }
 
-        .credential-text p {
-            font-size: 0.78rem;
+        .mini-profile-info p {
+            font-size: 0.8rem;
             color: var(--gray-text);
         }
 
-        /* 5. Secciones Generales del Portafolio */
-        .content-section-box {
-            padding: 40px 40px 60px 40px;
+        /* 5. Secciones de Contenido (Proyectos, Herramientas, etc.) */
+        .content-block-box {
+            padding: 45px 45px 65px 45px;
             border-top: 1px solid var(--border-color);
         }
 
-        .section-header-flex {
+        .section-heading-row {
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
 
-        .section-header-flex h2 {
-            font-size: 1.8rem;
+        .section-heading-row h2 {
+            font-size: 2rem;
             font-weight: 700;
             color: var(--dark-main);
         }
 
-        .section-header-flex p {
+        .section-heading-row p {
             color: var(--gray-text);
-            font-size: 0.9rem;
+            font-size: 0.92rem;
         }
 
-        /* Grid de Proyectos Estilo Imagen */
-        .projects-grid-layout {
+        /* Grid de Proyectos Estilo Tarjetas Limpias */
+        .projects-grid-modern {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 25px;
         }
 
-        .project-card-item {
+        .project-item-card {
             background: var(--light-bg);
             border-radius: var(--radius-inner);
-            padding: 30px;
+            padding: 35px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             border: 1px solid rgba(0,0,0,0.03);
         }
 
-        .project-card-top {
+        .project-item-top {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 15px;
         }
 
-        .project-tag-pill {
+        .project-tag-badge {
             background: var(--container-bg);
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 0.75rem;
+            padding: 5px 14px;
+            border-radius: 14px;
+            font-size: 0.78rem;
             font-weight: 600;
             color: var(--dark-main);
         }
 
-        .project-card-item h3 {
-            font-size: 1.2rem;
-            margin-bottom: 8px;
+        .project-item-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
             color: var(--dark-main);
         }
 
-        .project-card-item p {
+        .project-item-card p {
             color: var(--gray-text);
-            font-size: 0.9rem;
+            font-size: 0.92rem;
             margin-bottom: 20px;
         }
 
         /* Herramientas Grid */
-        .tools-flex-wrap {
+        .tools-flex-layout {
             display: flex;
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 14px;
         }
 
-        .tool-pill-item {
+        .tool-pill-badge {
             background: var(--light-bg);
-            padding: 10px 20px;
-            border-radius: 14px;
+            padding: 12px 22px;
+            border-radius: 16px;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.92rem;
             border: 1px solid rgba(0,0,0,0.04);
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
         }
 
         /* Educación Grid */
@@ -314,61 +317,62 @@
             gap: 20px;
         }
 
-        .education-card-item {
+        .education-item-card {
             background: var(--light-bg);
             border-radius: var(--radius-inner);
-            padding: 25px;
+            padding: 28px;
+            border: 1px solid rgba(0,0,0,0.03);
         }
 
-        .education-tag-pill {
+        .education-tag-small {
             display: inline-block;
             background: var(--container-bg);
-            padding: 4px 10px;
-            border-radius: 8px;
-            font-size: 0.7rem;
+            padding: 4px 12px;
+            border-radius: 10px;
+            font-size: 0.72rem;
             font-weight: 600;
             text-transform: uppercase;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             color: var(--dark-main);
         }
 
-        .education-card-item h3 {
-            font-size: 1rem;
+        .education-item-card h3 {
+            font-size: 1.05rem;
             font-weight: 600;
             color: var(--dark-main);
-            margin-bottom: 6px;
+            margin-bottom: 8px;
         }
 
-        .education-card-item p {
-            font-size: 0.82rem;
+        .education-item-card p {
+            font-size: 0.85rem;
             color: var(--gray-text);
         }
 
-        /* 6. Footer Oscuro Estilo Inferior de la Imagen */
+        /* 6. Footer Oscuro Inferior */
         footer {
             background-color: var(--dark-main);
             color: var(--container-bg);
-            padding: 50px 40px 30px 40px;
-            border-top-left-radius: 28px;
-            border-top-right-radius: 28px;
+            padding: 60px 45px 35px 45px;
+            border-top-left-radius: 32px;
+            border-top-right-radius: 32px;
         }
 
         .footer-grid-layout {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
             gap: 40px;
-            margin-bottom: 40px;
+            margin-bottom: 45px;
         }
 
-        .footer-column h4 {
-            font-size: 1rem;
-            margin-bottom: 12px;
+        .footer-column-item h4 {
+            font-size: 1.05rem;
+            margin-bottom: 14px;
             color: var(--container-bg);
         }
 
-        .footer-column p {
+        .footer-column-item p {
             color: #A8A29E;
-            font-size: 0.85rem;
+            font-size: 0.88rem;
             margin-bottom: 10px;
         }
 
@@ -377,24 +381,24 @@
         }
 
         .footer-links-list li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         .footer-links-list a {
             color: #A8A29E;
             text-decoration: none;
-            font-size: 0.85rem;
+            font-size: 0.88rem;
         }
 
         .footer-social-row {
             display: flex;
-            gap: 10px;
-            margin-top: 15px;
+            gap: 12px;
+            margin-top: 18px;
         }
 
         .footer-social-row a {
-            width: 34px;
-            height: 34px;
+            width: 38px;
+            height: 38px;
             background: rgba(255,255,255,0.08);
             color: var(--container-bg);
             display: inline-flex;
@@ -404,86 +408,93 @@
         }
 
         .footer-bottom-bar {
-            padding-top: 20px;
+            padding-top: 25px;
             border-top: 1px solid rgba(255,255,255,0.1);
             text-align: center;
             color: #78716C;
-            font-size: 0.8rem;
+            font-size: 0.82rem;
         }
 
         @media (max-width: 768px) {
-            .hero-section-one, .projects-grid-layout, .education-grid-layout, .footer-grid-layout, .credentials-row {
+            .hero-block-one, .projects-grid-modern, .education-grid-layout, .footer-grid-layout, .mini-profiles-row {
                 grid-template-columns: 1fr;
             }
-            .curved-dark-hero-card {
+            .dark-curved-card {
                 flex-direction: column;
-                gap: 20px;
+                gap: 25px;
                 text-align: center;
+                padding: 40px 20px;
             }
-            .nav-menu-links {
+            .header-center-links {
                 display: none;
+            }
+            .mockup-wrapper {
+                border-radius: 20px;
+            }
+            body {
+                padding: 10px;
             }
         }
     </style>
 </head>
 <body>
 
-    <div class="main-wrapper">
+    <div class="mockup-wrapper">
 
-        <!-- Top Nav Estilo Referencia -->
-        <div class="top-nav-bar">
-            <div class="nav-logo-tag">
+        <!-- Top Header Minimalista -->
+        <div class="top-header">
+            <div class="header-logo-pill">
                 <i class="fa-solid fa-diagram-project"></i> KH Portfolio
             </div>
-            <ul class="nav-menu-links">
+            <ul class="header-center-links">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#herramientas">Herramientas</a></li>
                 <li><a href="#preparacion">Preparación</a></li>
             </ul>
-            <a href="#contacto" class="nav-contact-btn">Contacto</a>
+            <a href="#contacto" class="header-cta-btn">Contacto</a>
         </div>
 
-        <!-- Hero Section 1 con Fotografía Real -->
-        <section class="hero-section-one">
+        <!-- Hero Block 1: Título y Fotografía Real -->
+        <section class="hero-block-one">
             <div>
                 <h1>Transforma la complejidad en resultados de alto impacto</h1>
                 <p>Ingeniera Industrial y Project Manager apasionada por liderar proyectos de alto impacto, gestión de equipos multidisciplinarios y entrega de iniciativas mediante metodologías ágiles.</p>
-                <a href="#proyectos" class="btn-main-action">Ver Portafolio</a>
+                <a href="#proyectos" class="hero-action-btn">Ver Portafolio</a>
             </div>
-            <!-- Reemplaza "tu-foto-real.jpg" por el nombre de tu archivo de imagen subido a GitHub -->
-            <div class="hero-photo-box">
+            <!-- Cambia "tu-foto-real.jpg" por el nombre exacto de tu foto en GitHub -->
+            <div class="hero-image-frame">
                 <img src="tu-foto-real.jpg" alt="Karen Holguín">
             </div>
         </section>
 
-        <!-- Hero Section 2: Banner Curvo Oscuro (Estilo Segunda Sección de la Imagen) -->
-        <div class="curved-banner-container">
-            <div class="curved-dark-hero-card">
+        <!-- Hero Block 2: Gran Banner Curvo Oscuro (Exacto al diseño de la referencia) -->
+        <div class="dark-curved-section">
+            <div class="dark-curved-card">
                 <h2>Gestión de Proyectos TI & Transformación Digital</h2>
-                <a href="#contacto" class="btn-light-action">Conectar Ahora</a>
+                <a href="#contacto" class="banner-white-btn">Conectar Ahora</a>
             </div>
         </div>
 
-        <!-- Tarjetas de Credenciales / Roles Clave (Estilo Tarjetas de la Referencia) -->
-        <div class="credentials-row">
-            <div class="credential-card-item">
-                <div class="credential-avatar"><img src="tu-foto-real.jpg" alt="KH"></div>
-                <div class="credential-text">
+        <!-- Mini Profiles Row (Estilo tarjetas de equipo de la referencia) -->
+        <div class="mini-profiles-row">
+            <div class="mini-profile-card">
+                <div class="mini-avatar-circle"><img src="tu-foto-real.jpg" alt="KH"></div>
+                <div class="mini-profile-info">
                     <h4>Karen Holguín</h4>
                     <p>Senior IT Project Manager</p>
                 </div>
             </div>
-            <div class="credential-card-item">
-                <div class="credential-avatar" style="display:flex;align-items:center;justify-content:center;background:var(--dark-main);color:white;"><i class="fa-solid fa-building-columns"></i></div>
-                <div class="credential-text">
+            <div class="mini-profile-card">
+                <div class="mini-avatar-circle" style="display:flex;align-items:center;justify-content:center;background:var(--dark-main);color:white;"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="mini-profile-info">
                     <h4>Experiencia Institucional</h4>
                     <p>DGII & Sector Financiero</p>
                 </div>
             </div>
-            <div class="credential-card-item">
-                <div class="credential-avatar" style="display:flex;align-items:center;justify-content:center;background:var(--dark-main);color:white;"><i class="fa-solid fa-award"></i></div>
-                <div class="credential-text">
+            <div class="mini-profile-card">
+                <div class="mini-avatar-circle" style="display:flex;align-items:center;justify-content:center;background:var(--dark-main);color:white;"><i class="fa-solid fa-award"></i></div>
+                <div class="mini-profile-info">
                     <h4>Metodologías</h4>
                     <p>PMI, Scrum & Agile</p>
                 </div>
@@ -491,64 +502,64 @@
         </div>
 
         <!-- Portafolio de Proyectos -->
-        <section class="content-section-box" id="proyectos">
-            <div class="section-header-flex">
+        <section class="content-block-box" id="proyectos">
+            <div class="section-heading-row">
                 <div>
                     <h2>Portafolio de Proyectos</h2>
                     <p>Iniciativas estratégicas bajo estándares de gestión corporativa.</p>
                 </div>
             </div>
 
-            <div class="projects-grid-layout">
-                <div class="project-card-item">
+            <div class="projects-grid-modern">
+                <div class="project-item-card">
                     <div>
-                        <div class="project-card-top">
-                            <span class="project-tag-pill">Estrategia País • DGII</span>
+                        <div class="project-item-top">
+                            <span class="project-tag-badge">Estrategia País • DGII</span>
                         </div>
                         <h3>Facturación Electrónica</h3>
                         <p>Liderazgo integral en el despliegue de una iniciativa nacional de transformación fiscal, asegurando cumplimiento normativo y adopción masiva.</p>
                     </div>
                 </div>
-                <div class="project-card-item">
+                <div class="project-item-card">
                     <div>
-                        <div class="project-card-top">
-                            <span class="project-tag-pill">Inteligencia Artificial • DGII</span>
+                        <div class="project-item-top">
+                            <span class="project-tag-badge">Inteligencia Artificial • DGII</span>
                         </div>
                         <h3>Detector de Anomalías (Microsoft)</h3>
                         <p>Incorporación de inteligencia artificial en procesos fiscales de la República Dominicana para automatizar la mitigación de riesgos.</p>
                     </div>
                 </div>
-                <div class="project-card-item">
+                <div class="project-item-card">
                     <div>
-                        <div class="project-card-top">
-                            <span class="project-tag-pill">Gestión del Cambio • DGII</span>
+                        <div class="project-item-top">
+                            <span class="project-tag-badge">Gestión del Cambio • DGII</span>
                         </div>
                         <h3>Adopción de Microsoft Copilot</h3>
                         <p>Despliegue operativo y capacitación estratégica en herramientas de IA generativa para optimizar la eficiencia institucional.</p>
                     </div>
                 </div>
-                <div class="project-card-item">
+                <div class="project-item-card">
                     <div>
-                        <div class="project-card-top">
-                            <span class="project-tag-pill">Apps Financieras • IQTek / Strands</span>
+                        <div class="project-item-top">
+                            <span class="project-tag-badge">Apps Financieras • IQTek / Strands</span>
                         </div>
                         <h3>Módulo de Finanzas Personales</h3>
                         <p>Gestión end-to-end coordinando proveedores internacionales para integrar herramientas de ahorro en soluciones móviles financieras.</p>
                     </div>
                 </div>
-                <div class="project-card-item">
+                <div class="project-item-card">
                     <div>
-                        <div class="project-card-top">
-                            <span class="project-tag-pill">Infraestructura & CX • DGII / Sidesys</span>
+                        <div class="project-item-top">
+                            <span class="project-tag-badge">Infraestructura & CX • DGII / Sidesys</span>
                         </div>
                         <h3>Expansión del Sistema de Turnos (eFlow)</h3>
                         <p>Liderazgo en el despliegue operativo e instalación física de equipos en oficinas nacionales, estandarizando la gestión de turnos.</p>
                     </div>
                 </div>
-                <div class="project-card-item">
+                <div class="project-item-card">
                     <div>
-                        <div class="project-card-top">
-                            <span class="project-tag-pill">Ciberseguridad • Cloudflare</span>
+                        <div class="project-item-top">
+                            <span class="project-tag-badge">Ciberseguridad • Cloudflare</span>
                         </div>
                         <h3>Protección de Infraestructura Crítica</h3>
                         <p>Coordinación de iniciativas de ciberseguridad avanzada y revisiones técnicas para blindar sistemas institucionales.</p>
@@ -558,29 +569,29 @@
         </section>
 
         <!-- Herramientas y Programas -->
-        <section class="content-section-box" id="herramientas">
-            <div class="section-header-flex">
+        <section class="content-block-box" id="herramientas">
+            <div class="section-heading-row">
                 <div>
                     <h2>Herramientas & Programas</h2>
                     <p>Dominio de plataformas para gestión avanzada y analítica.</p>
                 </div>
             </div>
-            <div class="tools-flex-wrap">
-                <div class="tool-pill-item"><i class="fa-solid fa-list-check" style="color: var(--gray-text);"></i> Microsoft Project</div>
-                <div class="tool-pill-item"><i class="fa-brands fa-jira" style="color: var(--gray-text);"></i> Jira</div>
-                <div class="tool-pill-item"><i class="fa-solid fa-square-check" style="color: var(--gray-text);"></i> Asana</div>
-                <div class="tool-pill-item"><i class="fa-solid fa-cubes" style="color: var(--gray-text);"></i> Odoo</div>
-                <div class="tool-pill-item"><i class="fa-solid fa-infinity" style="color: var(--gray-text);"></i> Azure DevOps</div>
-                <div class="tool-pill-item"><i class="fa-solid fa-chart-column" style="color: var(--gray-text);"></i> Power BI</div>
-                <div class="tool-pill-item"><i class="fa-solid fa-circle-nodes" style="color: var(--gray-text);"></i> Miro</div>
-                <div class="tool-pill-item"><i class="fa-solid fa-check-to-slot" style="color: var(--gray-text);"></i> Trello</div>
-                <div class="tool-pill-item"><i class="fa-solid fa-palette" style="color: var(--gray-text);"></i> Canva</div>
+            <div class="tools-flex-layout">
+                <div class="tool-pill-badge"><i class="fa-solid fa-list-check" style="color: var(--gray-text);"></i> Microsoft Project</div>
+                <div class="tool-pill-badge"><i class="fa-brands fa-jira" style="color: var(--gray-text);"></i> Jira</div>
+                <div class="tool-pill-badge"><i class="fa-solid fa-square-check" style="color: var(--gray-text);"></i> Asana</div>
+                <div class="tool-pill-badge"><i class="fa-solid fa-cubes" style="color: var(--gray-text);"></i> Odoo</div>
+                <div class="tool-pill-badge"><i class="fa-solid fa-infinity" style="color: var(--gray-text);"></i> Azure DevOps</div>
+                <div class="tool-pill-badge"><i class="fa-solid fa-chart-column" style="color: var(--gray-text);"></i> Power BI</div>
+                <div class="tool-pill-badge"><i class="fa-solid fa-circle-nodes" style="color: var(--gray-text);"></i> Miro</div>
+                <div class="tool-pill-badge"><i class="fa-solid fa-check-to-slot" style="color: var(--gray-text);"></i> Trello</div>
+                <div class="tool-pill-badge"><i class="fa-solid fa-palette" style="color: var(--gray-text);"></i> Canva</div>
             </div>
         </section>
 
         <!-- Preparación Académica & Formación -->
-        <section class="content-section-box" id="preparacion">
-            <div class="section-header-flex">
+        <section class="content-block-box" id="preparacion">
+            <div class="section-heading-row">
                 <div>
                     <h2>Preparación Académica & Formación</h2>
                     <p>Evolución técnica y metodológica continua.</p>
@@ -588,33 +599,33 @@
             </div>
 
             <div class="education-grid-layout">
-                <div class="education-card-item">
-                    <span class="education-tag-pill">Formación Continua</span>
+                <div class="education-item-card">
+                    <span class="education-tag-small">Formación Continua</span>
                     <h3>Power BI & BI</h3>
                     <p>Análisis de datos y tableros estratégicos para la toma de decisiones.</p>
                 </div>
-                <div class="education-card-item">
-                    <span class="education-tag-pill">Posgrado</span>
+                <div class="education-item-card">
+                    <span class="education-tag-small">Posgrado</span>
                     <h3>Máster en Gestión de Proyectos</h3>
                     <p>Especialización avanzada bajo estándares internacionales PMI.</p>
                 </div>
-                <div class="education-card-item">
-                    <span class="education-tag-pill">Grado Universitario</span>
+                <div class="education-item-card">
+                    <span class="education-tag-small">Grado Universitario</span>
                     <h3>Ingeniería Industrial</h3>
                     <p>Universidad APEC (UNAPEC). Optimización y procesos.</p>
                 </div>
-                <div class="education-card-item">
-                    <span class="education-tag-pill">Diplomado</span>
+                <div class="education-item-card">
+                    <span class="education-tag-small">Diplomado</span>
                     <h3>Gerencia de Experiencia (CX)</h3>
                     <p>Instituto Tecnológico de Santo Domingo (INTEC).</p>
                 </div>
-                <div class="education-card-item">
-                    <span class="education-tag-pill">Especializada</span>
+                <div class="education-item-card">
+                    <span class="education-tag-small">Especializada</span>
                     <h3>Scrum y Metodologías Ágiles</h3>
                     <p>ITLA. Marcos de trabajo para entrega iterativa de valor.</p>
                 </div>
-                <div class="education-card-item">
-                    <span class="education-tag-pill">Diplomado</span>
+                <div class="education-item-card">
+                    <span class="education-tag-small">Diplomado</span>
                     <h3>Business Analytics & Big Data</h3>
                     <p>Explotación de datos para la inteligencia de negocios.</p>
                 </div>
@@ -624,7 +635,7 @@
         <!-- Footer / Contacto -->
         <footer id="contacto">
             <div class="footer-grid-layout">
-                <div class="footer-column">
+                <div class="footer-column-item">
                     <h4>Karen Holguín</h4>
                     <p>Ingeniera Industrial y Senior IT Project Manager especializada en gestión de proyectos TI y transformación digital.</p>
                     <p><i class="fa-solid fa-envelope"></i> holguinkaren06@gmail.com</p>
@@ -634,7 +645,7 @@
                         <a href="mailto:holguinkaren06@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                     </div>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column-item">
                     <h4>Enlaces Rápidos</h4>
                     <ul class="footer-links-list">
                         <li><a href="#">Inicio</a></li>
@@ -643,7 +654,7 @@
                         <li><a href="#preparacion">Preparación</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column-item">
                     <h4>Trayectoria</h4>
                     <p><strong>Empresas:</strong> DGII, IQTek Solutions (Consultoría TI), Banco Popular, Banreservas</p>
                 </div>
