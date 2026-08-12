@@ -8,766 +8,248 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #7C3AED;
-            --primary-light: #F3E8FF;
-            --primary-dark: #6D28D9;
-            --dark: #1F2937;
-            --gray-text: #4B5563;
-            --bg-color: #FAFAFB;
-            --white: #FFFFFF;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--dark);
-            line-height: 1.6;
-        }
-
-        /* Navbar */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 30px 20px;
-            animation: fadeInDown 0.8s ease-out;
-        }
-
-        .logo {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--dark);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .logo span {
-            color: var(--primary);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-            align-items: center;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--gray-text);
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary);
-            transform: translateY(-2px);
-        }
-
-        .btn-contact {
-            background-color: var(--dark);
-            color: var(--white);
-            padding: 10px 25px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .btn-contact:hover {
-            background-color: var(--primary);
-            transform: translateY(-3px);
-            box-shadow: 0 6px 18px rgba(124, 58, 237, 0.3);
-        }
-
-        /* Hero Section */
-        .hero {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 50px;
-            animation: fadeIn 1s ease-out;
-        }
-
-        .hero-content {
-            flex: 1.2;
-        }
-
-        .hero-content h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 20px;
-            color: var(--dark);
-        }
-
-        .hero-content h1 span {
-            color: var(--primary);
-        }
-
-        .hero-content p {
-            font-size: 1.05rem;
-            color: var(--gray-text);
-            margin-bottom: 30px;
-        }
-
-        .btn-primary {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: var(--white);
-            padding: 14px 32px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            box-shadow: 0 10px 25px rgba(124, 58, 237, 0.25);
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 30px rgba(124, 58, 237, 0.4);
-        }
-
-        /* Tarjeta con Monograma Vectorial HD */
-        .hero-card {
-            flex: 0.9;
-            background: linear-gradient(135deg, #FFFFFF 0%, var(--primary-light) 100%);
-            padding: 40px 30px;
-            border-radius: 30px;
-            box-shadow: 0 20px 40px rgba(124, 58, 237, 0.1);
-            border: 1px solid rgba(124, 58, 237, 0.2);
-            text-align: center;
-            position: relative;
-            transition: transform 0.4s ease;
-        }
-
-        .hero-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .executive-avatar {
-            width: 140px;
-            height: 140px;
-            margin: 0 auto 20px auto;
-            background: radial-gradient(circle at 30% 30%, #A78BFA, var(--primary-dark));
-            color: var(--white);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3.2rem;
-            font-weight: 700;
-            box-shadow: 0 15px 35px rgba(124, 58, 237, 0.4);
-            border: 4px solid var(--white);
-            letter-spacing: -2px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .executive-avatar::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.25), transparent);
-            transform: rotate(45deg);
-            animation: shine 4s ease-in-out infinite;
-        }
-
-        @keyframes shine {
-            0% { transform: translateX(-100%) rotate(45deg); }
-            100% { transform: translateX(100%) rotate(45deg); }
-        }
-
-        .hero-card h3 {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 5px;
-            color: var(--dark);
-        }
-
-        .hero-card .title-role {
-            font-size: 0.95rem;
-            font-weight: 600;
-            color: var(--primary);
-            margin-bottom: 12px;
-        }
-
-        .hero-card .tags-container {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-top: 15px;
-        }
-
-        .hero-tag {
-            background: var(--white);
-            color: var(--dark);
-            padding: 6px 14px;
-            border-radius: 12px;
-            font-size: 0.75rem;
-            font-weight: 500;
-            border: 1px solid rgba(124, 58, 237, 0.2);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-        }
-
-        /* Brands & Ecosystem Trust Bar */
-        .brands-section {
-            max-width: 1100px;
-            margin: 60px auto;
-            background: var(--dark);
-            padding: 35px 40px;
-            border-radius: 20px;
-            color: var(--white);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        }
-
-        .brands-section h3 {
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--primary-light);
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .brands-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 20px;
-            text-align: center;
-        }
-
-        .brand-group p {
-            font-size: 0.8rem;
-            color: #9CA3AF;
-            margin-bottom: 6px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .brand-group span {
-            font-weight: 600;
-            font-size: 1rem;
-            color: #F3F4F6;
-        }
-
-        /* Section Containers */
-        .section {
-            max-width: 1200px;
-            margin: 80px auto;
-            padding: 0 20px;
-        }
-
-        .section-header {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto 50px auto;
-        }
-
-        .section-header h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: var(--dark);
-        }
-
-        .section-header p {
-            color: var(--gray-text);
-        }
-
-        /* Portfolio Grid (Projects) */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-        }
-
-        .project-card {
-            background: var(--white);
-            padding: 35px;
-            border-radius: 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-            border: 1px solid rgba(124, 58, 237, 0.1);
-            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .project-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary), #C084FC);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-8px);
-            border-color: rgba(124, 58, 237, 0.3);
-            box-shadow: 0 20px 40px rgba(124, 58, 237, 0.12);
-        }
-
-        .project-card:hover::before {
-            opacity: 1;
-        }
-
-        .project-badge {
-            display: inline-block;
-            background: var(--primary-light);
-            color: var(--primary);
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.78rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        .project-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 12px;
-            color: var(--dark);
-        }
-
-        .project-card p {
-            color: var(--gray-text);
-            font-size: 0.95rem;
-        }
-
-        /* Herramientas & Programas Section */
-        .tools-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 30px;
-        }
-
-        .tool-badge {
-            background: var(--white);
-            color: var(--dark);
-            padding: 12px 24px;
-            border-radius: 16px;
-            font-weight: 600;
-            border: 1px solid rgba(124, 58, 237, 0.2);
-            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.05);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .tool-badge:hover {
-            background: var(--primary-light);
-            border-color: var(--primary);
-            transform: translateY(-3px);
-        }
-
-        /* Preparación y Educación */
-        .education-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .edu-card {
-            background: var(--white);
-            padding: 30px;
-            border-radius: 20px;
-            border: 1px solid rgba(124, 58, 237, 0.15);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.02);
-            transition: transform 0.3s ease;
-        }
-
-        .edu-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary);
-        }
-
-        .edu-card h3 {
-            font-size: 1.15rem;
-            color: var(--dark);
-            margin-bottom: 8px;
-        }
-
-        .edu-card p {
-            color: var(--gray-text);
-            font-size: 0.9rem;
-        }
-
-        .edu-badge {
-            display: inline-block;
-            background: var(--primary-light);
-            color: var(--primary);
-            padding: 4px 12px;
-            border-radius: 10px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-bottom: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        /* Footer / Contact Section */
-        footer {
-            background: var(--dark);
-            color: var(--white);
-            padding: 80px 20px 40px 20px;
-            margin-top: 100px;
-            border-top-left-radius: 40px;
-            border-top-right-radius: 40px;
-            box-shadow: 0 -10px 30px rgba(0,0,0,0.05);
-        }
-
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 40px;
-            margin-bottom: 50px;
-        }
-
-        .footer-col h4 {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            color: var(--white);
-        }
-
-        .footer-col p {
-            color: #9CA3AF;
-            font-size: 0.95rem;
-            margin-bottom: 15px;
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 12px;
-        }
-
-        .footer-links a {
-            color: #9CA3AF;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .footer-links a:hover {
-            color: var(--white);
-        }
-
-        .social-icons {
-            display: flex;
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .social-icons a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: rgba(255,255,255,0.08);
-            color: var(--white);
-            border-radius: 50%;
-            transition: all 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            background: var(--primary);
-            transform: translateY(-3px);
-        }
-
-        .footer-bottom {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            text-align: center;
-            color: #9CA3AF;
-            font-size: 0.9rem;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(15px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+            --bg-canvas: #EAE6DF;
+            --card-white: #FFFFFF;
+            --dark-main: #1C1917;
+            --gray-text: #78716C;
+            --light-bg: #F5F5F4;
+            --border-color: #E7E5E4;
+            --radius-outer: 36px;
+            --radius-inner: 24px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        body { background-color: var(--bg-canvas); color: var(--dark-main); padding: 20px; line-height: 1.5; }
+        
+        .main-container { max-width: 1200px; margin: 0 auto; background-color: var(--card-white); border-radius: var(--radius-outer); box-shadow: 0 25px 50px rgba(0,0,0,0.06); overflow: hidden; border: 1px solid rgba(0,0,0,0.04); }
+
+        .top-navbar { display: flex; justify-content: space-between; align-items: center; padding: 25px 45px; border-bottom: 1px solid var(--border-color); }
+        .brand-logo-pill { background: var(--light-bg); padding: 8px 20px; border-radius: 30px; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; gap: 8px; color: var(--dark-main); }
+        .nav-links-center { display: flex; gap: 35px; list-style: none; }
+        .nav-links-center a { text-decoration: none; color: var(--gray-text); font-weight: 500; font-size: 0.9rem; transition: color 0.3s; }
+        .nav-links-center a:hover { color: var(--dark-main); }
+        .nav-cta-pill { background-color: var(--dark-main); color: var(--card-white); padding: 8px 22px; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+
+        .hero-top-section { padding: 50px 45px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; border-bottom: 1px solid var(--border-color); }
+        .hero-top-section h1 { font-size: 2.8rem; font-weight: 700; line-height: 1.15; margin-bottom: 15px; color: var(--dark-main); }
+        .hero-top-section p { font-size: 0.98rem; color: var(--gray-text); margin-bottom: 25px; }
+        .btn-dark-action { display: inline-block; background-color: var(--dark-main); color: var(--card-white); padding: 12px 28px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+        
+        .hero-photo-container { width: 100%; height: 280px; border-radius: var(--radius-inner); overflow: hidden; background-color: var(--light-bg); }
+        .hero-photo-container img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+
+        .curved-banner-padding { padding: 40px 45px; }
+        .curved-dark-card-box { background: var(--dark-main); border-radius: var(--radius-outer); padding: 50px; color: var(--card-white); display: flex; justify-content: space-between; align-items: center; }
+        .curved-dark-card-box h2 { font-size: 2.3rem; font-weight: 600; max-width: 550px; line-height: 1.2; }
+        .btn-light-action { background: var(--card-white); color: var(--dark-main); padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9rem; white-space: nowrap; }
+
+        .credentials-row-grid { padding: 0 45px 40px 45px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .cred-card-box { background: var(--light-bg); padding: 20px; border-radius: var(--radius-inner); display: flex; align-items: center; gap: 15px; }
+        .cred-avatar-img { width: 45px; height: 45px; border-radius: 50%; background: var(--border-color); overflow: hidden; flex-shrink: 0; }
+        .cred-avatar-img img { width: 100%; height: 100%; object-fit: cover; }
+        .cred-info h4 { font-size: 0.9rem; font-weight: 600; color: var(--dark-main); }
+        .cred-info p { font-size: 0.78rem; color: var(--gray-text); }
+
+        .section-container-box { padding: 40px 45px 60px 45px; border-top: 1px solid var(--border-color); }
+        .section-title-wrapper { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; }
+        .section-title-wrapper h2 { font-size: 1.8rem; font-weight: 700; color: var(--dark-main); }
+        .section-title-wrapper p { color: var(--gray-text); font-size: 0.9rem; }
+
+        .projects-two-column-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
+        .project-item-card { background: var(--light-bg); border-radius: var(--radius-inner); padding: 30px; border: 1px solid rgba(0,0,0,0.03); }
+        .project-tag-top { margin-bottom: 15px; }
+        .tag-pill-badge { background: var(--card-white); padding: 4px 12px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; color: var(--dark-main); }
+        .project-item-card h3 { font-size: 1.2rem; margin-bottom: 8px; color: var(--dark-main); }
+        .project-item-card p { color: var(--gray-text); font-size: 0.9rem; margin-bottom: 20px; }
+
+        .tools-pills-flex { display: flex; flex-wrap: wrap; gap: 12px; }
+        .tool-pill-badge { background: var(--light-bg); padding: 10px 20px; border-radius: 14px; font-weight: 600; font-size: 0.9rem; border: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center; gap: 8px; }
+
+        .education-three-column-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .edu-item-card { background: var(--light-bg); border-radius: var(--radius-inner); padding: 25px; }
+        .edu-tag-badge { display: inline-block; background: var(--card-white); padding: 4px 10px; border-radius: 8px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; margin-bottom: 10px; color: var(--dark-main); }
+        .edu-item-card h3 { font-size: 1rem; font-weight: 600; color: var(--dark-main); margin-bottom: 6px; }
+        .edu-item-card p { font-size: 0.82rem; color: var(--gray-text); }
+
+        footer { background-color: var(--dark-main); color: var(--card-white); padding: 50px 45px 30px 45px; border-top-left-radius: 28px; border-top-right-radius: 28px; }
+        .footer-grid-layout { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col-content h4 { font-size: 1rem; margin-bottom: 12px; color: var(--card-white); }
+        .footer-col-content p { color: #A8A29E; font-size: 0.85rem; margin-bottom: 10px; }
+        .footer-links-list { list-style: none; }
+        .footer-links-list li { margin-bottom: 8px; }
+        .footer-links-list a { color: #A8A29E; text-decoration: none; font-size: 0.85rem; }
+        .footer-social-icons { display: flex; gap: 10px; margin-top: 15px; }
+        .footer-social-icons a { width: 34px; height: 34px; background: rgba(255,255,255,0.08); color: var(--card-white); display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; }
+        .footer-bottom-bar { padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: #78716C; font-size: 0.8rem; }
 
         @media (max-width: 768px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
-            }
-            .footer-container {
-                grid-template-columns: 1fr;
-            }
-            .nav-links {
-                display: none;
-            }
+            .hero-top-section, .projects-two-column-grid, .education-three-column-grid, .footer-grid-layout, .credentials-row-grid { grid-template-columns: 1fr; }
+            .curved-dark-card-box { flex-direction: column; gap: 20px; text-align: center; }
+            .nav-links-center { display: none; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">
-            <i class="fa-solid fa-diagram-project" style="color: var(--primary);"></i> PM <span>Karen Holguín</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#herramientas">Herramientas</a></li>
-            <li><a href="#preparacion">Preparación</a></li>
-        </ul>
-        <a href="#contacto" class="btn-contact">Contacto</a>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Transforma la complejidad en <span>resultados de alto impacto</span></h1>
-            <p>Ingeniera Industrial y Project Manager apasionada por liderar proyectos de alto impacto, gestión de equipos multidisciplinarios, optimización de procesos y entrega de iniciativas mediante metodologías ágiles y buenas prácticas del PMI.</p>
-            <a href="#proyectos" class="btn-primary">Ver Portafolio</a>
-        </div>
-        
-        <!-- Tarjeta Corporativa con Monograma Vectorial HD -->
-        <div class="hero-card">
-            <div class="executive-avatar">
-                KH
-            </div>
-            <h3>Karen Holguín</h3>
-            <div class="title-role">Ingeniera Industrial & Project Manager</div>
-            <p style="color: var(--gray-text); font-size: 0.85rem;">Gestión de Proyectos TI & Transformación Digital</p>
-            <div class="tags-container">
-                <span class="hero-tag">Metodologías Ágiles / Scrum</span>
-                <span class="hero-tag">Buenas Prácticas PMI</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Brands & Ecosystem Trust Bar -->
-    <div class="brands-section">
-        <h3>Experiencia y Ecosistema Profesional</h3>
-        <div class="brands-grid">
-            <div class="brand-group">
-                <p>Experiencia Laboral</p>
-                <span>DGII, IQTek Solutions (Consultoría TI), Banco Popular, Banreservas</span>
-            </div>
-            <div class="brand-group">
-                <p>Proveedores & Tecnologías</p>
-                <span>Microsoft, Strands, Cloudflare, Webex, Sidesys, Calabrio</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Projects Section -->
-    <section class="section" id="proyectos">
-        <div class="section-header">
-            <h2>Portafolio de Proyectos</h2>
-            <p>Experiencia ejecutiva estructurada bajo los más altos estándares de gestión corporativa e institucional.</p>
+    <div class="main-container">
+        <div class="top-navbar">
+            <div class="brand-logo-pill"><i class="fa-solid fa-diagram-project"></i> KH Portfolio</div>
+            <ul class="nav-links-center">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#preparacion">Preparación</a></li>
+            </ul>
+            <a href="#contacto" class="nav-cta-pill">Contacto</a>
         </div>
 
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <span class="project-badge">Estrategia País • DGII</span>
-                <h3>Facturación Electrónica</h3>
-                <p>Liderazgo integral en el despliegue de una iniciativa nacional de transformación fiscal, asegurando cumplimiento normativo y adopción masiva.</p>
+        <section class="hero-top-section">
+            <div>
+                <h1>Transforma la complejidad en resultados de alto impacto</h1>
+                <p>Ingeniera Industrial y Project Manager apasionada por liderar proyectos de alto impacto, gestión de equipos multidisciplinarios y entrega de iniciativas mediante metodologías ágiles.</p>
+                <a href="#proyectos" class="btn-dark-action">Ver Portafolio</a>
             </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <span class="project-badge">Inteligencia Artificial • DGII</span>
-                <h3>Detector de Anomalías (Microsoft)</h3>
-                <p>Incorporación de inteligencia artificial en procesos fiscales de la República Dominicana para automatizar la mitigación de riesgos.</p>
+            <div class="hero-photo-container">
+                <img src="karen-foto.jpeg" alt="Karen Holguín">
             </div>
+        </section>
 
-            <!-- Project 3 -->
-            <div class="project-card">
-                <span class="project-badge">Gestión del Cambio • DGII</span>
-                <h3>Adopción de Microsoft Copilot</h3>
-                <p>Despliegue operativo y capacitación estratégica en herramientas de IA generativa para optimizar la eficiencia institucional.</p>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <span class="project-badge">Apps Financieras • IQTek / Strands</span>
-                <h3>Módulo de Finanzas Personales</h3>
-                <p>Gestión end-to-end coordinando proveedores internacionales (Strands, España) para integrar herramientas de ahorro en soluciones móviles financieras.</p>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="project-card">
-                <span class="project-badge">Infraestructura & CX • DGII / Sidesys</span>
-                <h3>Expansión del Sistema de Turnos (eFlow)</h3>
-                <p>Liderazgo en el despliegue operativo e instalación física de equipos en oficinas nacionales junto a Sidesys, estandarizando la gestión de turnos institucionales.</p>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="project-card">
-                <span class="project-badge">Optimización CX • DGII / Sidesys</span>
-                <h3>Actualización de Versión & Analítica CX</h3>
-                <p>Coordinación de actualización tecnológica del sistema de turnos y rediseño de interfaz en colaboración con Sidesys para potenciar el análisis de experiencia del cliente.</p>
-            </div>
-
-            <!-- Project 7 -->
-            <div class="project-card">
-                <span class="project-badge">Automatización CX • Webex / Calabrio</span>
-                <h3>IVR Inteligente & Contact Center</h3>
-                <p>Diseño de flujos de respuesta de voz interactiva y revisiones de seguridad técnica con proveedores para optimizar la experiencia del cliente.</p>
-            </div>
-
-            <!-- Project 8 -->
-            <div class="project-card">
-                <span class="project-badge">Ciberseguridad • Cloudflare</span>
-                <h3>Protección de Infraestructura Crítica</h3>
-                <p>Coordinación de iniciativas de ciberseguridad avanzada y revisiones técnicas para blindar sistemas institucionales.</p>
+        <div class="curved-banner-padding">
+            <div class="curved-dark-card-box">
+                <h2>Gestión de Proyectos TI & Transformación Digital</h2>
+                <a href="#contacto" class="btn-light-action">Conectar Ahora</a>
             </div>
         </div>
-    </section>
 
-    <!-- Herramientas y Programas Section -->
-    <section class="section" id="herramientas">
-        <div class="section-header">
-            <h2>Herramientas & Programas</h2>
-            <p>Dominio de software y plataformas tecnológicas para la gestión avanzada de proyectos y analítica.</p>
-        </div>
-        <div class="tools-grid">
-            <div class="tool-badge"><i class="fa-solid fa-list-check" style="color: var(--primary);"></i> Microsoft Project</div>
-            <div class="tool-badge"><i class="fa-brands fa-jira" style="color: var(--primary);"></i> Jira</div>
-            <div class="tool-badge"><i class="fa-solid fa-square-check" style="color: var(--primary);"></i> Asana</div>
-            <div class="tool-badge"><i class="fa-solid fa-cubes" style="color: var(--primary);"></i> Odoo</div>
-            <div class="tool-badge"><i class="fa-solid fa-infinity" style="color: var(--primary);"></i> Azure DevOps</div>
-            <div class="tool-badge"><i class="fa-solid fa-chart-column" style="color: var(--primary);"></i> Power BI</div>
-            <div class="tool-badge"><i class="fa-solid fa-circle-nodes" style="color: var(--primary);"></i> Miro</div>
-            <div class="tool-badge"><i class="fa-solid fa-check-to-slot" style="color: var(--primary);"></i> Trello</div>
-            <div class="tool-badge"><i class="fa-solid fa-palette" style="color: var(--primary);"></i> Canva</div>
-        </div>
-    </section>
-
-    <!-- Preparación y Educación Section -->
-    <section class="section" id="preparacion">
-        <div class="section-header">
-            <h2>Preparación Académica & Formación</h2>
-            <p>Constante evolución técnica y metodológica orientada a la excelencia en gestión, analítica y liderazgo directivo.</p>
-        </div>
-
-        <div class="education-grid">
-            <div class="edu-card">
-                <span class="edu-badge">Formación Continua</span>
-                <h3>Business Intelligence With Power BI</h3>
-                <p>Capacitación enfocada en el análisis de datos, modelado y creación de tableros estratégicos para la toma de decisiones gerenciales.</p>
-            </div>
-            <div class="edu-card">
-                <span class="edu-badge">Formación Continua</span>
-                <h3>Gestión de Proyectos con IA Generativa</h3>
-                <p>Formación especializada enfocada en la integración de inteligencia artificial generativa dentro de la gestión de proyectos tecnológicos.</p>
-            </div>
-            <div class="edu-card">
-                <span class="edu-badge">Posgrado</span>
-                <h3>Máster en Gestión de Proyectos</h3>
-                <p>Especialización avanzada en administración de proyectos bajo estándares internacionales y buenas prácticas del PMI.</p>
-            </div>
-            <div class="edu-card">
-                <span class="edu-badge">Grado Universitario</span>
-                <h3>Ingeniería Industrial</h3>
-                <p>Universidad APEC (UNAPEC). Formación integral orientada al diseño, optimización y gestión de procesos productivos y organizacionales.</p>
-            </div>
-            <div class="edu-card">
-                <span class="edu-badge">Formación Especializada</span>
-                <h3>Formulación, Análisis y Evaluación de Proyectos</h3>
-                <p>Universidad Dominico Americana (UNICDA). Desarrollo de competencias analíticas para la viabilidad de iniciativas estratégicas.</p>
-            </div>
-            <div class="edu-card">
-                <span class="edu-badge">Diplomado</span>
-                <h3>Gerencia de la Experiencia del Cliente (CX)</h3>
-                <p>Instituto Tecnológico de Santo Domingo (INTEC). Enfoque estratégico en la satisfacción y optimización de la experiencia del usuario.</p>
-            </div>
-            <div class="edu-card">
-                <span class="edu-badge">Formación Especializada</span>
-                <h3>Manejo de Proyectos con Metodología Scrum y Agile</h3>
-                <p>Instituto Tecnológico de las Américas (ITLA). Aplicación de marcos de trabajo ágiles para la entrega iterativa de valor.</p>
-            </div>
-            <div class="edu-card">
-                <span class="edu-badge">Diplomado</span>
-                <h3>Business Analytics y Big Data</h3>
-                <p>Instituto Tecnológico de las Américas (ITLA). Explotación de grandes volúmenes de datos para la inteligencia de negocios.</p>
-            </div>
-            <div class="edu-card">
-                <span class="edu-badge">Diplomado</span>
-                <h3>Competencias para Mandos Medios</h3>
-                <p>Universidad Nacional Pedro Henríquez Ureña / UNIBE. Fortalecimiento de habilidades de liderazgo directivo y supervisión.</p>
-            </div>
-            <div class="edu-card">
-                <span class="edu-badge">Formación Especializada</span>
-                <h3>Diseño UX/UI (User Experience / User Interface)</h3>
-                <p>Instituto Tecnológico de las Américas (ITLA). Fundamentos de diseño centrado en el usuario para interfaces digitales.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer / Contact Section -->
-    <footer id="contacto">
-        <div class="footer-container">
-            <div class="footer-col">
-                <h4>Karen Holguín</h4>
-                <p>Ingeniera Industrial y Senior IT Project Manager especializada en transformación digital y gestión de proyectos.</p>
-                <p style="color: var(--white);"><i class="fa-solid fa-envelope"></i> holguinkaren06@gmail.com</p>
-                <p style="color: var(--white);"><i class="fa-solid fa-phone"></i> 809-968-4680</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/karen-holguin-06102000/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="mailto:holguinkaren06@gmail.com" title="Correo Electrónico"><i class="fa-solid fa-envelope"></i></a>
+        <div class="credentials-row-grid">
+            <div class="cred-card-box">
+                <div class="cred-avatar-img"><img src="karen-foto.jpeg" alt="KH"></div>
+                <div class="cred-info">
+                    <h4>Karen Holguín</h4>
+                    <p>Senior IT Project Manager</p>
                 </div>
             </div>
-            <div class="footer-col">
-                <h4>Enlaces Rápidos</h4>
-                <ul class="footer-links">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#herramientas">Herramientas</a></li>
-                    <li><a href="#preparacion">Preparación</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+            <div class="cred-card-box">
+                <div class="cred-avatar-img" style="display:flex;align-items:center;justify-content:center;background:var(--dark-main);color:white;"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="cred-info">
+                    <h4>Experiencia Institucional</h4>
+                    <p>DGII & Sector Financiero</p>
+                </div>
             </div>
-            <div class="footer-col">
-                <h4>Especialidades</h4>
-                <ul class="footer-links">
-                    <li>Transformación Digital</li>
-                    <li>Gestión de Proyectos PMI / Scrum</li>
-                    <li>Gerencia de Experiencia del Cliente (CX)</li>
-                </ul>
+            <div class="cred-card-box">
+                <div class="cred-avatar-img" style="display:flex;align-items:center;justify-content:center;background:var(--dark-main);color:white;"><i class="fa-solid fa-award"></i></div>
+                <div class="cred-info">
+                    <h4>Metodologías</h4>
+                    <p>PMI, Scrum & Agile</p>
+                </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Karen Holguín. Todos los derechos reservados. Diseñado bajo estándares ejecutivos.</p>
-        </div>
-    </footer>
 
+        <section class="section-container-box" id="proyectos">
+            <div class="section-title-wrapper">
+                <div><h2>Portafolio de Proyectos</h2><p>Iniciativas estratégicas bajo estándares de gestión corporativa.</p></div>
+            </div>
+            <div class="projects-two-column-grid">
+                <div class="project-item-card">
+                    <div>
+                        <div class="project-tag-top"><span class="tag-pill-badge">Estrategia País • DGII</span></div>
+                        <h3>Facturación Electrónica</h3>
+                        <p>Liderazgo integral en el despliegue de una iniciativa nacional de transformación fiscal, asegurando cumplimiento normativo y adopción masiva.</p>
+                    </div>
+                </div>
+                <div class="project-item-card">
+                    <div>
+                        <div class="project-tag-top"><span class="tag-pill-badge">Inteligencia Artificial • DGII</span></div>
+                        <h3>Detector de Anomalías (Microsoft)</h3>
+                        <p>Incorporación de inteligencia artificial en procesos fiscales de la República Dominicana para automatizar la mitigación de riesgos.</p>
+                    </div>
+                </div>
+                <div class="project-item-card">
+                    <div>
+                        <div class="project-tag-top"><span class="tag-pill-badge">Gestión del Cambio • DGII</span></div>
+                        <h3>Adopción de Microsoft Copilot</h3>
+                        <p>Despliegue operativo y capacitación estratégica en herramientas de IA generativa para optimizar la eficiencia institucional.</p>
+                    </div>
+                </div>
+                <div class="project-item-card">
+                    <div>
+                        <div class="project-tag-top"><span class="tag-pill-badge">Apps Financieras • IQTek / Strands</span></div>
+                        <h3>Módulo de Finanzas Personales</h3>
+                        <p>Gestión end-to-end coordinando proveedores internacionales para integrar herramientas de ahorro en soluciones móviles financieras.</p>
+                    </div>
+                </div>
+                <div class="project-item-card">
+                    <div>
+                        <div class="project-tag-top"><span class="tag-pill-badge">Infraestructura & CX • DGII / Sidesys</span></div>
+                        <h3>Expansión del Sistema de Turnos (eFlow)</h3>
+                        <p>Liderazgo en el despliegue operativo e instalación física de equipos en oficinas nacionales, estandarizando la gestión de turnos.</p>
+                    </div>
+                </div>
+                <div class="project-item-card">
+                    <div>
+                        <div class="project-tag-top"><span class="tag-pill-badge">Ciberseguridad • Cloudflare</span></div>
+                        <h3>Protección de Infraestructura Crítica</h3>
+                        <p>Coordinación de iniciativas de ciberseguridad avanzada y revisiones técnicas para blindar sistemas institucionales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container-box" id="herramientas">
+            <div class="section-title-wrapper">
+                <div><h2>Herramientas & Programas</h2><p>Dominio de plataformas para gestión avanzada y analítica.</p></div>
+            </div>
+            <div class="tools-pills-flex">
+                <div class="tool-pill-badge"><i class="fa-solid fa-list-check" style="color: var(--gray-text);"></i> Microsoft Project</div>
+                <div class="tool-pill-badge"><i class="fa-brands fa-jira" style="color: var(--gray-text);"></i> Jira</div>
+                <div class="tool-pill-badge"><i class="fa-solid fa-square-check" style="color: var(--gray-text);"></i> Asana</div>
+                <div class="tool-pill-badge"><i class="fa-solid fa-cubes" style="color: var(--gray-text);"></i> Odoo</div>
+                <div class="tool-pill-badge"><i class="fa-solid fa-infinity" style="color: var(--gray-text);"></i> Azure DevOps</div>
+                <div class="tool-pill-badge"><i class="fa-solid fa-chart-column" style="color: var(--gray-text);"></i> Power BI</div>
+                <div class="tool-pill-badge"><i class="fa-solid fa-circle-nodes" style="color: var(--gray-text);"></i> Miro</div>
+                <div class="tool-pill-badge"><i class="fa-solid fa-check-to-slot" style="color: var(--gray-text);"></i> Trello</div>
+                <div class="tool-pill-badge"><i class="fa-solid fa-palette" style="color: var(--gray-text);"></i> Canva</div>
+            </div>
+        </section>
+
+        <section class="section-container-box" id="preparacion">
+            <div class="section-title-wrapper">
+                <div><h2>Preparación Académica & Formación</h2><p>Evolución técnica y metodológica continua.</p></div>
+            </div>
+            <div class="education-three-column-grid">
+                <div class="edu-item-card"><span class="edu-tag-badge">Formación Continua</span><h3>Power BI & BI</h3><p>Análisis de datos y tableros estratégicos.</p></div>
+                <div class="edu-item-card"><span class="edu-tag-badge">Posgrado</span><h3>Máster en Gestión de Proyectos</h3><p>Especialización avanzada bajo estándares PMI.</p></div>
+                <div class="edu-item-card"><span class="edu-tag-badge">Grado</span><h3>Ingeniería Industrial</h3><p>Universidad APEC (UNAPEC).</p></div>
+                <div class="edu-item-card"><span class="edu-tag-badge">Diplomado</span><h3>Gerencia de Experiencia (CX)</h3><p>Instituto Tecnológico de Santo Domingo (INTEC).</p></div>
+                <div class="edu-item-card"><span class="edu-tag-badge">Especializada</span><h3>Scrum y Metodologías Ágiles</h3><p>ITLA.</p></div>
+                <div class="edu-item-card"><span class="edu-tag-badge">Diplomado</span><h3>Business Analytics & Big Data</h3><p>Explotación de datos.</p></div>
+            </div>
+        </section>
+
+        <footer id="contacto">
+            <div class="footer-grid-layout">
+                <div class="footer-col-content">
+                    <h4>Karen Holguín</h4>
+                    <p>Ingeniera Industrial y Senior IT Project Manager.</p>
+                    <p><i class="fa-solid fa-envelope"></i> holguinkaren06@gmail.com</p>
+                    <div class="footer-social-icons">
+                        <a href="https://www.linkedin.com/in/karen-holguin-06102000/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col-content">
+                    <h4>Enlaces</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-content">
+                    <h4>Trayectoria</h4>
+                    <p>DGII, IQTek, Popular, Banreservas</p>
+                </div>
+            </div>
+            <div class="footer-bottom-bar"><p>&copy; 2026 Karen Holguín.</p></div>
+        </footer>
+    </div>
 </body>
 </html>
