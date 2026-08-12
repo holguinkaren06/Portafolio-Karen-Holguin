@@ -30,7 +30,7 @@
             line-height: 1.6;
         }
 
-        /* Navbar con efectos modernos */
+        /* Navbar */
         nav {
             display: flex;
             justify-content: space-between;
@@ -141,7 +141,7 @@
             box-shadow: 0 15px 30px rgba(124, 58, 237, 0.4);
         }
 
-        /* Executive Badge Card con Avatar Gráfico Premium */
+        /* Executive Badge Card con Monograma Premium */
         .hero-card {
             flex: 0.9;
             background: linear-gradient(135deg, #FFFFFF 0%, var(--primary-light) 100%);
@@ -289,7 +289,7 @@
             color: var(--gray-text);
         }
 
-        /* Portfolio Grid (Projects) con efectos hover avanzados */
+        /* Portfolio Grid (Projects) */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -349,6 +349,50 @@
         .project-card p {
             color: var(--gray-text);
             font-size: 0.95rem;
+        }
+
+        /* Preparación y Educación */
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .edu-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(124, 58, 237, 0.15);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease;
+        }
+
+        .edu-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .edu-card h3 {
+            font-size: 1.15rem;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+
+        .edu-card p {
+            color: var(--gray-text);
+            font-size: 0.9rem;
+        }
+
+        .edu-badge {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary);
+            padding: 4px 10px;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 12px;
         }
 
         /* Footer */
@@ -440,6 +484,7 @@
         <ul class="nav-links">
             <li><a href="#">Inicio</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#preparacion">Preparación</a></li>
             <li><a href="mailto:holguinkaren06@gmail.com">Contacto</a></li>
         </ul>
         <a href="mailto:holguinkaren06@gmail.com" class="btn-contact">Contacto</a>
@@ -453,7 +498,7 @@
             <a href="#proyectos" class="btn-primary">Ver Portafolio</a>
         </div>
         
-        <!-- Tarjeta Corporativa con Monograma / Avatar Vectorial de Alta Gama -->
+        <!-- Tarjeta Corporativa con Monograma Premium -->
         <div class="hero-card">
             <div class="executive-avatar">
                 KH
@@ -462,8 +507,8 @@
             <div class="title-role">Ingeniera Industrial & Project Manager</div>
             <p style="color: var(--gray-text); font-size: 0.85rem;">Transformación Digital & Gestión de TI</p>
             <div class="tags-container">
-                <span class="hero-tag">DGII & Consultoría</span>
-                <span class="hero-tag">Alta Gerencia</span>
+                <span class="hero-tag">Agile / Scrum / PMI</span>
+                <span class="hero-tag">Lean Six Sigma</span>
             </div>
         </div>
     </section>
@@ -474,11 +519,11 @@
         <div class="brands-grid">
             <div class="brand-group">
                 <p>Experiencia Laboral</p>
-                <span>DGII (Sector Público) & IQ Tech Solutions (Consultoría TI)</span>
+                <span>DGII (Sector Público) & IQTek Solutions (Consultoría TI)</span>
             </div>
             <div class="brand-group">
                 <p>Tecnologías & Proveedores Clave</p>
-                <span>Microsoft, Strands, Cloudflare, Webex, Cidesis, Calabrio</span>
+                <span>Microsoft, Strands, Cloudflare, Webex, Sidesys, Calabrio</span>
             </div>
         </div>
     </div>
@@ -514,23 +559,23 @@
 
             <!-- Project 4 -->
             <div class="project-card">
-                <span class="project-badge">Apps Financieras • IQ Tech / Strands</span>
+                <span class="project-badge">Apps Financieras • IQTek / Strands</span>
                 <h3>Módulo de Finanzas Personales</h3>
                 <p>Gestión end-to-end coordinando proveedores internacionales (Strands, España) para integrar herramientas de ahorro en soluciones móviles financieras.</p>
             </div>
 
             <!-- Project 5 -->
             <div class="project-card">
-                <span class="project-badge">Infraestructura & CX • DGII / Cidesis</span>
+                <span class="project-badge">Infraestructura & CX • DGII / Sidesys</span>
                 <h3>Expansión del Sistema de Turnos (eFlow)</h3>
-                <p>Liderazgo en el despliegue operativo e instalación física de equipos en oficinas nacionales, estandarizando la gestión de turnos institucionales.</p>
+                <p>Liderazgo en el despliegue operativo e instalación física de equipos en oficinas nacionales junto a Sidesys, estandarizando la gestión de turnos institucionales.</p>
             </div>
 
             <!-- Project 6 -->
             <div class="project-card">
-                <span class="project-badge">Optimización CX • DGII / Cidesis</span>
+                <span class="project-badge">Optimización CX • DGII / Sidesys</span>
                 <h3>Actualización de Versión & Analítica CX</h3>
-                <p>Coordinación de actualización tecnológica del sistema de turnos y rediseño de interfaz para potenciar el análisis de experiencia del cliente.</p>
+                <p>Coordinación de actualización tecnológica del sistema de turnos y rediseño de interfaz en colaboración con Sidesys para potenciar el análisis de experiencia del cliente.</p>
             </div>
 
             <!-- Project 7 -->
@@ -549,6 +594,32 @@
         </div>
     </section>
 
+    <!-- Preparación y Educación Section -->
+    <section class="section" id="preparacion">
+        <div class="section-header">
+            <h2>Preparación Académica & Formación</h2>
+            <p>Constante evolución técnica y metodológica orientada a la excelencia en analítica y gestión.</p>
+        </div>
+
+        <div class="education-grid">
+            <div class="edu-card">
+                <span class="edu-badge">Formación Continua</span>
+                <h3>Business Intelligence With Power BI</h3>
+                <p>Capacitación avanzada enfocada en el análisis de datos, modelado y creación de tableros estratégicos para la toma de decisiones gerenciales.</p>
+            </div>
+            <div class="edu-card">
+                <span class="edu-badge">Postgrado / Alta Gerencia</span>
+                <h3>Maestría en Alta Gerencia & INTEC</h3>
+                <p>Especialización en métodos cuantitativos, finanzas corporativas, gestión estratégica y optimización de procesos de negocio.</p>
+            </div>
+            <div class="edu-card">
+                <span class="edu-badge">Base Técnica</span>
+                <h3>Ingeniería Industrial & Telemática</h3>
+                <p>Sólida formación en arquitectura de procesos, metodologías Ágiles (Scrum/PMI), control de calidad y despliegue tecnológico.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="footer-container">
@@ -562,6 +633,7 @@
                 <ul class="footer-links">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#preparacion">Preparación</a></li>
                     <li><a href="mailto:holguinkaren06@gmail.com">Contacto</a></li>
                 </ul>
             </div>
