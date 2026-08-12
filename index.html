@@ -40,7 +40,7 @@
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 700;
             color: var(--dark);
             display: flex;
@@ -100,7 +100,7 @@
         }
 
         .hero-content h1 {
-            font-size: 3.2rem;
+            font-size: 3rem;
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: 20px;
@@ -134,6 +134,7 @@
             transform: translateY(-3px);
         }
 
+        /* Hero Avatar Card */
         .hero-card {
             flex: 1;
             background: linear-gradient(135deg, var(--primary-light), #EDE9FE);
@@ -141,17 +142,31 @@
             border-radius: 35px;
             box-shadow: 0 20px 40px rgba(124, 58, 237, 0.1);
             text-align: center;
+            position: relative;
         }
 
-        .hero-card i {
-            font-size: 5rem;
+        .avatar-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px auto;
+            background: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(124, 58, 237, 0.15);
+            border: 4px solid var(--white);
+            overflow: hidden;
+        }
+
+        .avatar-container i {
+            font-size: 4rem;
             color: var(--primary);
-            margin-bottom: 20px;
         }
 
         .hero-card h3 {
             font-size: 1.5rem;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             color: var(--dark);
         }
 
@@ -288,7 +303,7 @@
             margin-bottom: 12px;
         }
 
-        .footer-links a {
+        .footer-links  a {
             color: #9CA3AF;
             text-decoration: none;
             transition: color 0.3s;
@@ -327,12 +342,12 @@
     <!-- Navbar -->
     <nav>
         <div class="logo">
-            <i class="fa-solid fa-layer-group" style="color: var(--primary);"></i> Karen<span>.PM</span>
+            <i class="fa-solid fa-diagram-project" style="color: var(--primary);"></i> PM <span>Karen Holguín</span>
         </div>
         <ul class="nav-links">
             <li><a href="#">Inicio</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#expertise">Especialidades</a></li>
+            <li><a href="mailto:holguinkaren06@gmail.com">Contacto</a></li>
         </ul>
         <a href="mailto:holguinkaren06@gmail.com" class="btn-contact">Contacto</a>
     </nav>
@@ -345,7 +360,9 @@
             <a href="#proyectos" class="btn-primary">Ver Portafolio</a>
         </div>
         <div class="hero-card">
-            <i class="fa-solid fa-user-tie"></i>
+            <div class="avatar-container">
+                <i class="fa-solid fa-user-tie"></i>
+            </div>
             <h3>Karen Holguín</h3>
             <p style="color: var(--gray-text);">Senior IT Project Manager | DGII & Consultoría</p>
         </div>
@@ -371,7 +388,7 @@
             <div class="project-card">
                 <span class="project-badge">Estrategia País • DGII</span>
                 <h3>Facturación Electrónica</h3>
-                <p>Liderazgo integral en el despliegue de una iniciativa nacional de transformación fiscal, asegurando cumplimiento normativo y adopción masiva.</p>
+                <p>Liderazgo integral en el despliegue de una iniciativa nacional de transformation fiscal, asegurando cumplimiento normativo y adopción masiva.</p>
             </div>
 
             <!-- Project 2 -->
@@ -422,24 +439,3 @@
             <div class="footer-col">
                 <h4>Enlaces Rápidos</h4>
                 <ul class="footer-links">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="mailto:holguinkaren06@gmail.com">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Especialidades</h4>
-                <ul class="footer-links">
-                    <li>Transformación Digital</li>
-                    <li>Gestión C-Level</li>
-                    <li>Proveedores Internacionales</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Karen Holguín. Todos los derechos reservados. Diseñado bajo estándares ejecutivos.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
